@@ -11,7 +11,7 @@ for (let x of word) {
 //l
 //o
 
-//problem
+//problem no.1
 // Write a function filterOddNumbers(numbers) that takes an array of numbers as input and uses the for...of loop
 // to filter out the odd numbers, returning a new array containing only the even
 
@@ -21,12 +21,35 @@ function filterOddNumbers(numbers) {
   for (let x of numbers) {
     // console.log(x);
     if (x % 2 == 0) {
-      console.log(x);
-    }
-    else if (x % 2 == 1) {
-      console.log(x);
+      // console.log(x);
+    } else if (x % 2 == 1) {
+      // console.log(x);
     }
   }
 }
 
-console.log(filterOddNumbers(numbers)); // Should output: [2, 4, 6, 8, 10]
+// console.log(filterOddNumbers(numbers));
+
+// Should output: [2, 4, 6, 8, 10]
+
+//problem no.2
+
+//Write a function sumOfSquares(numbers) that takes an array of numbers as input
+//and calculates the sum of the squares of each number using the for...of loop. Return the total sum.
+
+let digit = [1, 2, 3, 4, 5];
+
+function sumOfSquares(digit) {
+  let sum = 0;
+  for (let x of digit) {
+    console.log(x);
+    // sum = sum + x ** 2;
+    sum += x * x;
+  }
+
+  return sum;
+}
+
+console.log(sumOfSquares(digit));
+//out put 
+//55
