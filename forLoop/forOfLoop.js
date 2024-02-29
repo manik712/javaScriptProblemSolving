@@ -55,7 +55,7 @@ function sumOfSquares(digit) {
 //out put
 //55
 
-// Problem: Vowel Count
+// Problem no.3: Vowel Count
 
 // Write a JavaScript function that takes a string as input and returns the count of
 // vowels in that string. Use the for...of loop to iterate through the characters of
@@ -65,7 +65,8 @@ function countOfVowel(string) {
   let count = 0;
   for (let x of string) {
     if ("aeiouAEIOU".includes(x)) {
-      count += 1;
+      // count += 1;
+      count++;
     }
   }
   return count;
