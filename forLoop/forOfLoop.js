@@ -42,7 +42,7 @@ let digit = [1, 2, 3, 4, 5];
 function sumOfSquares(digit) {
   let sum = 0;
   for (let x of digit) {
-    console.log(x);
+    // console.log(x);
     // sum = sum + x ** 2;
     sum += x * x;
   }
@@ -50,6 +50,26 @@ function sumOfSquares(digit) {
   return sum;
 }
 
-console.log(sumOfSquares(digit));
-//out put 
+// console.log(sumOfSquares(digit));
+
+//out put
 //55
+
+// Problem: Vowel Count
+
+// Write a JavaScript function that takes a string as input and returns the count of
+// vowels in that string. Use the for...of loop to iterate through the characters of
+// the string and check if each character is a vowel (a, e, i, o, u, case-insensitive).
+
+function countOfVowel(string) {
+  let count = 0;
+  for (let x of string) {
+    if ("aeiouAEIOU".includes(x)) {
+      count += 1;
+    }
+  }
+  return count;
+}
+
+let vowelCount = countOfVowel("javascript");
+console.log(vowelCount);
