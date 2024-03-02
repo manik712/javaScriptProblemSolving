@@ -55,3 +55,4 @@ function CalculatePower(base, exponent) {
  
 }
 CalculatePower(4,2)
+//answer will be 16
