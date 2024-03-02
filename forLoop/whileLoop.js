@@ -17,7 +17,7 @@ while (i > 20) {
 //the multiplication table for that number, from 1 to 10.
 
 // Get user input
-const number = parseInt(3.6);
+const number = parseInt(-45);
 
 // Check if the input is a number
 if (!isNaN(number)) {
