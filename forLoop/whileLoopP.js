@@ -28,4 +28,30 @@ function calculateFactorial(number) {
 }
 
 // Example: Calculate factorial of 7
-calculateFactorial(7);
+// calculateFactorial(7);
+
+/*
+
+Problem: Power Calculation
+
+Write a program that calculates the result of 
+raising a given base to the power of an exponent 
+using a while loop. The base and exponent are both
+positive integers.
+
+
+*/
+function CalculatePower(base, exponent) {
+  base = Math.max(1, Math.floor(base));
+  exponent = Math.max(0, Math.floor(exponent));
+
+  let result = 1;
+  let currentNumber = 0;
+  while (currentNumber < exponent) {
+    result = result * base;
+    currentNumber++;
+  }
+  console.log(result);
+ 
+}
+CalculatePower(4,2)
