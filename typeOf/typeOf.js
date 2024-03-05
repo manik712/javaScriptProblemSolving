@@ -12,26 +12,52 @@ typeof null; // Returns "object"
 let myCar1 = "volvo";
 
 console.log(typeof myCar1);
+//string
 let myCar2 = 30;
 console.log(typeof myCar2);
+//number
 let boolean1 = false;
 console.log(typeof boolean1);
+//boolean
 
 let myCar3 = {
   car: "volvo",
   bike: "yamaha",
 };
-console.log(typeof myCar3,24);
+console.log(typeof myCar3, 24);
+//object
 
 let arr = [1, 2, 3, 4, 5, 6];
 
 console.log(typeof arr, 28);
+//object
 
 let date = new Date();
-console.log(typeof date,31);
+console.log(typeof date, 31);
+//object
 
-let pen
-console.log(typeof pen,34);
+let pen;
+console.log(typeof pen, 34);
+//undefined
 
-let nan = NaN
-console.log(typeof nan,37);
+let nan = NaN;
+console.log(typeof nan, 37);
+//number
+
+function evenNumber() {}
+console.log(typeof evenNumber);
+//function
+
+let mango = null;
+console.log(typeof mango, 46);
+//object
+
+let a = "car";
+
+let b = 6;
+
+let c = a + "" + b;
+console.log(c);
+//car6
+console.log(typeof c,51);
+//string
