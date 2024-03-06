@@ -59,5 +59,40 @@ let b = 6;
 let c = a + "" + b;
 console.log(c);
 //car6
-console.log(typeof c,51);
+console.log(typeof c, 51);
 //string
+
+let contractors = "good".contractor;
+
+// console.log(contractors,67);
+
+function isArray(myArray) {
+  console.log(myArray.constructor.toString().indexOf("Array") > -1);
+}
+// isArray({ fName: "good" });
+
+function isArray(myArray) {
+  console.log(myArray.constructor.toString().indexOf("Array") > -1);
+}
+
+
+//check if the object is an Array function
+function isArray(myArray) {
+  console.log(myArray.constructor === Array);
+}
+
+isArray([1, 2, 34, 5]);
+
+function isDate(myDate) {
+  console.log(myDate.constructor.toString().indexOf("Date") > -1, 87);
+}
+
+isDate(new Date());
+
+
+//check if the object is an Array function
+function isDate(myDate) {
+  console.log(myDate.constructor === Date,91);
+}
+
+isDate(new Date());
