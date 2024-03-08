@@ -1,7 +1,7 @@
 /*
 Write a function that
 takes in two numbers and 
- returns the result of performing a
+returns the result of performing a
 bitwise AND operation on them.
 
 
