@@ -2,8 +2,8 @@
 Problem: Find the Single NumberYou 
 are given a non-empty array of integers 
 where every element appears
- twice except for one. Find that 
- single one.
+twice except for one. Find that 
+single one.
 
 */
 function findSingleNumber(nums) {
