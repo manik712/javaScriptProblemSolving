@@ -73,3 +73,15 @@ n?	Matches any string that contains zero or one occurrences of n
 
 
 */
+
+//Using test()
+
+const pattern = /z/;
+const t = pattern.test("The best things in life are free!");
+
+//Since there is no  an "z" in the string, the output of the code above will be
+//false
+console.log(t);
+//one line
+const f = /e/.test("The best things in life are free!");
+console.log(f);
