@@ -11,3 +11,65 @@ console.log(n);
 let text1 = "Visit W3Schools";
 let n2 = text1.search(/w3schools/i);
 console.log(n2, 13);
+
+//replace()
+
+let text4 = "i hate you!";
+let result = text4.replace("hate", "love");
+console.log(result, 19);
+
+//replace()
+
+let text5 = "i hate you!";
+let result1 = text4.replace(/Hate/i, "love");
+console.log(result, 27);
+
+/*
+
+     Modifier	Description	
+
+i	Perform case-insensitive matching	
+g	Perform a global match (find all)	
+m	Perform multiline matching	
+d	Perform start and end matching (New in ES2022)
+
+*/
+
+//Regular Expression Patterns
+
+/*
+
+Brackets are used to find a range of characters:
+
+Expression	Description	Try it
+[abc]	Find any of the characters between the brackets	
+[0-9]	Find any of the digits between the brackets	
+(x|y)	Find any of the alternatives separated with |
+
+*/
+
+//Metacharacters are characters with a special meaning:
+
+/*
+
+
+Metacharacters	Description	
+\d	Find a digit	
+\s	Find a whitespace character	
+\b	Find a match at the beginning of a word like this: \bWORD, or at the end of a word like this: WORD\b	
+\uxxxx	Find the Unicode character specified by the hexadecimal number xxxx
+
+
+*/
+
+/*
+
+Quantifiers define quantities:
+
+Quantifier	Description	
+n+	Matches any string that contains at least one n
+n*	Matches any string that contains zero or more occurrences of n
+n?	Matches any string that contains zero or one occurrences of n
+
+
+*/
