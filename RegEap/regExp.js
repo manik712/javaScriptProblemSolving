@@ -85,3 +85,18 @@ console.log(t);
 //one line
 const f = /e/.test("The best things in life are free!");
 console.log(f);
+
+//Using test()
+
+const r = /z/.exec("The best things in life are free!");
+console.log(r);
+/*
+The exec() method is a RegExp expression method.
+
+It searches a string for a specified pattern, and returns the found text as an object.
+
+If no match is found, it returns an empty (null) object.
+
+The following example searches a string for the character "e"
+
+*/
