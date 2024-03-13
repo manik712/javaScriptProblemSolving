@@ -26,6 +26,7 @@ try {
 }
 
 //throw exception
+
 let x = "5";
 try {
   if (x == "") throw "empty";
@@ -33,6 +34,26 @@ try {
   x = Number(x);
   if (x < 5) throw "too low";
   if (x > 10) throw "too high";
+} catch (err) {
+  console.log(err);
+  return;
+}
+
+console.log("code is ok");
+
+//throw  with object
+
+let x1 = "15";
+try {
+  if (x1 == "") throw "empty";
+  if (isNaN(x1)) throw "not a number";
+  x = Number(x1);
+  if (x1 < 5) throw "too low";
+  if (x1 > 10)
+    throw {
+      message: "too high",
+      name: "highError",
+    };
 } catch (err) {
   console.log(err);
   return;
