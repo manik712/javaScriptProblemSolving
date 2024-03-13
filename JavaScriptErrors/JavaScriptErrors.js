@@ -43,6 +43,8 @@ try {
 
 //throw  with object
 
+
+
 let x1 = "15";
 try {
   if (x1 == "") throw "empty";
@@ -60,6 +62,8 @@ try {
 }
 
 console.log("code is ok");
+
+
 
 //throw with object with finally
 
@@ -79,4 +83,24 @@ try {
   return;
 } finally {
   console.log("code is ok, 88");
+}
+
+
+/*
+Error Object Properties
+
+Property	    Description
+name	        Sets or returns an error name
+message	      Sets or returns an error message (a string)
+
+*/
+
+
+let num = 1;
+try {
+   num.toPrecision(500);
+  console.log(a);
+  // A number cannot have 500 significant digits
+} catch (err) {
+  console.log(err.message, 99);
 }
