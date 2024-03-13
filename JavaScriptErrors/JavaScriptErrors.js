@@ -11,8 +11,30 @@ The throw statement defines a custom error.
 
 */
 //try catch
+
 try {
   //code
 } catch (err) {
   console.log(err);
 }
+
+//example
+try {
+  addleat("try catch");
+} catch (err) {
+  // console.log(err.message);
+}
+
+//throw exception
+let x = "5";
+try {
+  if (x == "") throw "empty";
+  if (isNaN(x)) throw "not a number";
+  x = Number(x);
+  if (x < 5) throw "too low";
+  if (x > 10) throw "too high";
+} catch (err) {
+  console.log(err);
+  return;
+}
+console.log("code is ok");
