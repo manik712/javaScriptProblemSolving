@@ -39,7 +39,7 @@ try {
   return;
 }
 
-console.log("code is ok");
+// console.log("code is ok");
 
 //throw  with object
 
@@ -58,4 +58,25 @@ try {
   console.log(err);
   return;
 }
+
 console.log("code is ok");
+
+//throw with object with finally
+
+let x2 = "5";
+try {
+  if (x2 == "") throw "empty";
+  if (isNaN(x2)) throw "not a number";
+  x = Number(x2);
+  if (x2 < 5) throw "too low";
+  if (x2 > 10)
+    throw {
+      message: "too high",
+      name: "highError",
+    };
+} catch (err) {
+  console.log(err);
+  return;
+} finally {
+  console.log("code is ok, 88");
+}
