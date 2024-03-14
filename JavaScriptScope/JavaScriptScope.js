@@ -35,3 +35,17 @@ Variables declared inside a { } block cannot be accessed from outside the block:
 //x can not  be used outside
 
 //Variables declared with the var keyword can NOT have block scope
+
+
+
+//Local Scope
+
+
+// code here can NOT use carName
+
+function myFunction() {
+  let carName = "Volvo";
+  // code here CAN use carName
+}
+
+// code here can NOT use carName
