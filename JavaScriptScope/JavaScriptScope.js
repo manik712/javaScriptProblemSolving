@@ -81,3 +81,8 @@ function myFunction() {
 }
 console.log(carName);
 //Volvo
+
+
+
+//Strict Mode
+//In "Strict Mode", undeclared variables are not automatically global.
