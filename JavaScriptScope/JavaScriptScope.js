@@ -97,14 +97,26 @@ function myFunction() {
 
 if (typeof window !== "undefined") {
   // code that relies on window object
-  console.dir(window, 104);
+  // console.dir(window, 104);
 }
 
-console.dir(window);
+// console.dir(window);
 
 // var carName = "Volvo";
-console.dir(carName);
+// console.dir(carName);
 
-
-//if you write by 
+//if you write by
 //let then you can find it in window
+
+//The Lifetime of JavaScript Variables
+
+//The lifetime of a JavaScript variable starts when it is declared.
+//Function (local) variables are deleted when the function is completed
+//In a web browser, global variables are deleted when you close the browser window (or tab).
+
+//Function Arguments
+
+function Arguments(a, b) {
+  console.log(a + b);
+}
+Arguments(6, 1);
