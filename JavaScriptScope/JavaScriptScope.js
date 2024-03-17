@@ -43,6 +43,7 @@ function myFunction() {
 function a() {
   let x = 5;
 }
+
 //let x can declare, but they are not same
 function b() {
   let x = 5;
@@ -62,3 +63,21 @@ function myFunction() {
 
 //var global scope and function scope
 //let and const block scope
+//In JavaScript, objects and functions are also variables
+
+let a = function my() {};
+
+// Automatically Global
+
+//If you assign a value to a variable that has not been declared, it will automatically become a GLOBAL variable.
+//This code example will declare a global variable carName, even if the value is assigned inside a function.
+
+myFunction();
+
+// code here can use carName
+
+function myFunction() {
+  carName = "Volvo";
+}
+console.log(carName);
+//Volvo
