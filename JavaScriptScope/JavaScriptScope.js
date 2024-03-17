@@ -40,7 +40,7 @@ function myFunction() {
 
 // code here can NOT use carName
 
-function a() {
+function bug() {
   let x = 5;
 }
 
@@ -79,10 +79,32 @@ myFunction();
 function myFunction() {
   carName = "Volvo";
 }
-console.log(carName);
+// console.log(carName);
 //Volvo
-
-
 
 //Strict Mode
 //In "Strict Mode", undeclared variables are not automatically global.
+
+//Global Variables in HTML
+
+//With JavaScript, the global scope is the JavaScript environment.
+//In HTML, the global scope is the window object.
+//Global variables defined with the var keyword belong to the window object:
+
+// To avoid potential issues,
+// you can check if window is defined before
+// accessing its properties, like this:
+
+if (typeof window !== "undefined") {
+  // code that relies on window object
+  console.dir(window, 104);
+}
+
+console.dir(window);
+
+// var carName = "Volvo";
+console.dir(carName);
+
+
+//if you write by 
+//let then you can find it in window
