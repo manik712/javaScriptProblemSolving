@@ -9,3 +9,13 @@ arr = [1, 2, 3, 4, 5, 6, 2, 3];
 num = 2;
 const array = deleteOccurrences(arr, num);
 console.log(array);
+
+//or
+
+let numbers = [1, 2, 3, 4, 5, 6];
+let num = 2;
+let result = numbers.filter(lal);
+function lal(element) {
+  return element != num;
+}
+console.log(result);
