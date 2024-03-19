@@ -22,15 +22,31 @@
 
 // or
 
-let numbers1 = [1, 2, 3, 4, 5, 6,7];
-let num1 = 2;
+// let numbers1 = [1, 2, 3, 4, 5, 6,7];
+// let num1 = 2;
 
-let answer = numbers1.filter((currentValue, index, arr) => {
-  console.log(currentValue,29);
-  console.log(index,30);
-  console.log(arr,31);
-  return currentValue != num1;
-});
-console.log(answer);
+// let answer = numbers1.filter((currentValue, index, arr) => {
+//   console.log(currentValue,29);
+//   console.log(index,30);
+//   console.log(arr,31);
+//   return currentValue != num1;
+// });
+// console.log(answer);
 
+// or
 
+let arr = [1, 2, 3, 4, 5, 6, 7];
+
+let num = 2;
+
+function deleteOccurrences(arr, num) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == num) {
+      arr.splice(i, 1);
+    }
+  }
+  return arr;
+}
+const array = deleteOccurrences(arr, num);
+
+console.log(array);
