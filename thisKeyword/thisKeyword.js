@@ -46,7 +46,6 @@ Because the fullName method is a method of the person object.
 
 */
 
-
 /*
 this Alone
 When used alone, this refers to the global object.
@@ -59,7 +58,35 @@ In a browser window the global object is [object Window]
 
 */
 
-
 let x = this;
 
+console.log(x);
+// out put  maybe window
 
+function d() {
+  console.log(this);
+}
+d();
+// out put maybe window
+
+
+
+
+
+
+/*
+this in Event Handlers
+In HTML event handlers, this refers to the HTML element that received the event:
+
+
+*/
+
+
+
+// Example
+
+<button onclick="this.style.display='none'">
+  Click to Remove Me!
+</button>
+
+//this = button
