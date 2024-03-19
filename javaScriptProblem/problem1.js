@@ -35,18 +35,32 @@
 
 // or
 
-let arr = [1, 2, 3, 4, 5, 6, 7];
+// let arr = [1, 2, 3, 4, 5, 6, 7];
+
+// let num = 2;
+
+// function deleteOccurrences(arr, num) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] == num) {
+//       arr.splice(i, 1);
+//     }
+//   }
+//   return arr;
+// }
+// const array = deleteOccurrences(arr, num);
+
+// console.log(array);
+
+//or
+
+let arr = [1, 2, 3, 4, 5, 6, 2, 7];
 
 let num = 2;
 
-function deleteOccurrences(arr, num) {
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] == num) {
-      arr.splice(i, 1);
-    }
+let result = [];
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] != num) {
+    result.push(arr[i]);
   }
-  return arr;
 }
-const array = deleteOccurrences(arr, num);
-
-console.log(array);
+console.log(result);
