@@ -90,3 +90,19 @@ In HTML event handlers, this refers to the HTML element that received the event:
 </button>
 
 //this = button
+
+
+
+
+//Explicit Function Binding
+
+
+/*
+he call() and apply() methods are predefined JavaScript methods.
+
+They can both be used to call an object method with another object as argument.
+
+*/
+
+// Explicit Function Binding
+
