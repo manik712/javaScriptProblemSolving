@@ -90,7 +90,9 @@ Then add any number of methods.
 //Create a Class method named "age", that returns the Car age:
 
 
-class Person {
+
+
+class Persons {
   constructor(name, age) {
     this.name = name;
     this.age = age;
@@ -101,8 +103,30 @@ class Person {
   }
 }
 
+const person3 = new Persons("manik", 30);
+const person4 = new Persons("gold", 35);
+
+person3.play();
+person4.play();
+
+
+
+//You can send parameters to Class methods:
+
+
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  play(parameters) {
+    console.log(`${this.name} is good student ${parameters}`);
+  }
+}
+
 const person1 = new Person("manik", 30);
 const person2 = new Person("gold", 35);
 
-person1.play();
-person2.play();
+person1.play("yes");
+person2.play("no");
