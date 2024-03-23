@@ -10,7 +10,9 @@ JSON is often used when data is sent from a server to a web page.
 
 What is JSON?
 
+
 JSON stands for JavaScript Object Notation
+
 JSON is a lightweight data interchange format
 JSON is language independent *
 JSON is "self-describing" and easy to understand
@@ -33,13 +35,13 @@ JSON Example
 
 */
 
-{
-  "employees"[
+const a = {
+  employees: [
     ({ firstName: "John", lastName: "Doe" },
     { firstName: "Anna", lastName: "Smith" },
-    { firstName: "Peter", lastName: "Jones" })
-  ];
-}
+    { firstName: "Peter", lastName: "Jones" }),
+  ],
+};
 
 /*
 The JSON format is syntactically identical to the code for creating JavaScript objects.
@@ -60,3 +62,61 @@ Square brackets hold arrays
 
 
 */
+//JSON names require double quotes. JavaScript names do not.
+
+//JSON Data - A Name and a Value
+
+/*
+JSON data is written as name/value pairs, just like JavaScript object properties.
+
+A name/value pair consists of a field name (in double quotes), followed by a colon, followed by a value:
+
+*/
+
+//JSON Objects
+
+//JSON objects are written inside curly braces.
+
+//Just like in JavaScript, objects can contain multiple name/value pairs:
+
+const b = { firstName: "John", lastName: "Doe" };
+
+//JSON Arrays
+
+/*
+JSON arrays are written inside square brackets.
+
+Just like in JavaScript, an array can contain objects:
+
+
+*/
+
+
+//Converting a JSON Text to a JavaScript Object
+
+
+let text =
+  '{ "employees" : [' +
+  '{ "firstName":"John" , "lastName":"Doe" },' +
+  '{ "firstName":"Anna" , "lastName":"Smith" },' +
+  '{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+const obj = JSON.parse(text);
+
+console.log(obj.employees[0].lastName); //Doe
+// console.log(text);
+
+
+
+//Converting aJavaScript Object to a JSON Text
+
+
+
+let boy = {
+name :"manik",
+age:"34"
+
+}
+
+let object = JSON.stringify(boy)
+console.log(object);
