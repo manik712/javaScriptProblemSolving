@@ -13,9 +13,9 @@
 
 
 
-// */
-// //Example
-// <script type="module">
-// import message from "./message.js";
-// </script>
+
+//Example
+<script type="module">
+import message from "./message.js";
+</script>
 
