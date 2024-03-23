@@ -19,3 +19,11 @@
 import message from "./message.js";
 </script>
 
+
+
+//Import from default exports
+//Import a default export from the file message.js:
+
+import message from "./message.js";
+
+console.log(message);
