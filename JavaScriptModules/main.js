@@ -33,7 +33,13 @@ console.log(test); // out put a object
 
 
 
-import * as test  from "./apple.js"
 
-console.log(test.add); // out put a object
-                       //11
+// import * as test  from "./apple.js"
+
+// console.log(test.add); // out put a object
+//                        //11
+                       
+
+
+import external from "./apple.js"
+console.log(external);
