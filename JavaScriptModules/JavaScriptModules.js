@@ -1,21 +1,21 @@
-//JavaScript Modules
+// //JavaScript Modules
 
-//Modules
-/*
-JavaScript modules allow you to break up your code into separate files.
+// //Modules
+// /*
+// JavaScript modules allow you to break up your code into separate files.
 
-This makes it easier to maintain a code-base.
+// This makes it easier to maintain a code-base.
 
-Modules are imported from external files with the import statement.
+// Modules are imported from external files with the import statement.
 
-Modules also rely on type="module" in the <script> tag.
-
-
+// Modules also rely on type="module" in the <script> tag.
 
 
-*/
-//Example
-<script type="module">
-import message from "./message.js";
-</script>
+
+
+// */
+// //Example
+// <script type="module">
+// import message from "./message.js";
+// </script>
 
