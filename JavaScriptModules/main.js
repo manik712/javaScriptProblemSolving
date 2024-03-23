@@ -16,10 +16,24 @@ console.log(result);
 
 
 
+//varA 
+import { add as  varA } from "./apple.js"
+
+console.log(varA);
+
+
+
+
 
 // * as test 
 
 import * as test  from "./apple.js"
 
-console.log(test);
+console.log(test); // out put a object
 
+
+
+import * as test  from "./apple.js"
+
+console.log(test.add); // out put a object
+                       //11
