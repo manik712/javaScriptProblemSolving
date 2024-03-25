@@ -1,4 +1,4 @@
-//  problem:find out how many girl words are in the line
+//  problem:find out how many (girl) words are in the line
 
 const sentence = " Police were called to  girl reports of a girl";
 
@@ -8,4 +8,10 @@ const matches = sentence.match(/girl/gi);
 
 const result = matches ? matches.length : 0;
 
-console.log(result);
+// console.log(result);
+
+
+const positions = sentence.search(/girls/i)
+ const aaa =positions >=0 ? positions : "not found";
+
+console.log(aaa);
