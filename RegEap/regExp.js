@@ -86,7 +86,7 @@ console.log(t);
 const f = /e/.test("The best things in life are free!");
 console.log(f);
 
-//Using test()
+//Using exec()
 
 const r = /z/.exec("The best things in life are free!");
 console.log(r);
@@ -100,3 +100,21 @@ If no match is found, it returns an empty (null) object.
 The following example searches a string for the character "e"
 
 */
+
+Examples
+// A search for "ain" using a string:
+
+let text0 = "The rain in SPAIN stays mainly in the plain";
+text0.match("ain");
+// A search for "ain" using a regular expression:
+
+let text2 = "The rain in SPAIN stays mainly in the plain";
+text2.match(/ain/);
+// A global search for "ain":
+
+let text3 = "The rain in SPAIN stays mainly in the plain";
+text3.match(/ain/g);
+// A global, case-insensitive search:
+
+let text7 = "The rain in SPAIN stays mainly in the plain";
+text7.match(/ain/gi);
