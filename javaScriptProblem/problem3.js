@@ -11,6 +11,7 @@
 // let sum = 0;
 // for (let i = 0; i < sNumber1.length; i++) {
 //   sum += sNumber1[i];
+//sum =sum + sNumber1[i]
 // }
 // console.log(sum);
 // //25
