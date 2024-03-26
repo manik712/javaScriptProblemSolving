@@ -7,6 +7,8 @@ function getNumber() {
     // console.log(i);
 
     if (i % 3 == 0 || i % 5 == 0) {
+      // if (i % 3 == 0 && i % 5 == 0) {
+      //[ 15, 30, 45, 60, 75, 90 ]
       number.push(i);
     }
   }
