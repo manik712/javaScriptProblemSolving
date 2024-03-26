@@ -11,7 +11,7 @@ const result = matches ? matches.length : 0;
 // console.log(result);
 
 
-const positions = sentence.search(/girls/i)
+const positions = sentence.search(/girl/i)
  const aaa =positions >=0 ? positions : "not found";
 
 console.log(aaa);
