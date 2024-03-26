@@ -12,10 +12,10 @@ console.log(result); // Expected output: 4
 
 //problem
 /*
-Write a JavaScript function that checks if a
-given positive integer is a power of two.
-The function should return true if the number
-is a power of two and false otherwise. 
+Write a Write a JavaScript function that checks if a given
+ positive integer is a power of two.
+  The function should return true if the number
+   is a power of two and false otherwise. . 
 
 */
 

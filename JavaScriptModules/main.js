@@ -35,7 +35,7 @@ console.log(external);
 console.log(b);
 
 
-//default declaration just one time not multiple times
+//default export declaration just one time not multiple times
 
 import { myAim } from "./apple.js";
 
