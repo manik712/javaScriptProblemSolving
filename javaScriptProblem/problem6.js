@@ -12,3 +12,4 @@ return "not found"
 }
 
 console.log(linearSearch(['a', 'b', 'c'] ,'a'));
+
