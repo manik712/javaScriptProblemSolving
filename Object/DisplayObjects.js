@@ -17,4 +17,4 @@ const person = {
 
 
 
-document.getElementById("demo").innerHTML = person  
+document.getElementById("demo").innerHTML = person.age + " city " + person.city
