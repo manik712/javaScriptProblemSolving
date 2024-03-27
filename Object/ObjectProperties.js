@@ -29,3 +29,7 @@ person.country = "United States";
 person.age = 34;
 
 console.log(person);
+
+delete person.fname;
+
+console.log(person);
