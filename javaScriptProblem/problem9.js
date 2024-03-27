@@ -1,3 +1,6 @@
+
+
+
 const mixedArray = [
   "hello",
   undefined,
@@ -12,21 +15,25 @@ const mixedArray = [
   0,
 ];
 
-function falseFree() {
-  let arrays = [];
-  for (let i = 0; i < mixedArray.length; i++) {
-    if (mixedArray[i]) {
-      arrays.push(mixedArray[i]);
-    }
-  }
-  return arrays;
-}
-
-console.log(falseFree());
 
 
+// function falseFree() {
+//   let arrays = [];
+//   let length = mixedArray.length;
+//   for (let i = 0; i <length; i++) {
+//     if (mixedArray[i]) {
+//       arrays.push(mixedArray[i]);
+//     }
+//   }
+//   return arrays;
+// }
+
+// console.log(falseFree());
 
 
+
+
+//or
 
 
 
@@ -39,3 +46,13 @@ console.log(falseFree());
 //   }
 // });
 // console.log(newArray);
+
+
+
+//or 
+
+
+
+const newArray =mixedArray.filter(Boolean)
+
+console.log(newArray);
