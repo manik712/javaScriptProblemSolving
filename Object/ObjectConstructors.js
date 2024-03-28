@@ -36,3 +36,21 @@ myPerson.name = function () {
   return this.firstName + " " + this.lastName;
 };
 console.log(myPerson);
+
+//Built-in JavaScript Constructors
+
+new String()    // A new String object
+new Number()    // A new Number object
+new Boolean()   // A new Boolean object
+new Object()    // A new Object object
+new Array()     // A new Array object
+new RegExp()    // A new RegExp object
+new Function()  // A new Function object
+new Date()      // A new Date object
+
+
+//
+
+firstName = "John"
+firstName = new String("john")
+console.log(typeof firstName );
