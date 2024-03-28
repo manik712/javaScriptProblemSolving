@@ -33,7 +33,7 @@
 
 // console.log(truthyObject());
 
-const obj = {
+const objj = {
   a: "hello",
   b: undefined,
   c: "manik",
@@ -47,6 +47,8 @@ const obj = {
   k: 0,
 };
 
+
+
 const s = function truthyObject(obj) {
   for (let i in obj) {
     // console.log(obj,58)
@@ -59,4 +61,4 @@ const s = function truthyObject(obj) {
   return obj;
 };
 
-console.log(s(obj));
+console.log(s(objj));
