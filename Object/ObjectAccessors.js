@@ -48,9 +48,27 @@ It is useful for doing things behind-the-scenes
 
 */
 
+//The Object.defineProperty() method can also be used to add Getters and Setters:
 
 
 
 
 //Object.defineProperty()
 
+//The Object.defineProperty() method can also be used to add Getters and Setters:
+
+
+
+const person5 = {
+  firstName: "John",
+  lastName: "Doe",
+  
+};
+
+Object.defineProperty(person5, "fullName", {
+  get : function () {
+    return this.firstName+ " " + this.lastName
+  }
+});
+
+console.log(person5.fullName ,74);
