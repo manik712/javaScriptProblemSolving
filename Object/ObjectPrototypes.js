@@ -34,3 +34,5 @@ console.log(myPerson1.country);
 //bangladesh
 // console.log(myPerson.fullName());
 // console.log(myPerson1.fullName());
+
+//Only modify your own prototypes. Never modify the prototypes of standard JavaScript objects
