@@ -34,7 +34,7 @@ const arr1 = {
 
 //will return object
 
-const arr = ["a", "b","c"];
+const arr = ["a", "b", "c"];
 
 // which object has   Symbol(Symbol.iterator)  there are  Iterables
 
@@ -55,3 +55,24 @@ console.log(iteratorArr.next());
 //{ value: 'c', done: false }
 console.log(iteratorArr.next());
 //{ value: undefined, done: true }
+
+//create an object
+const myObj = {};
+
+myObj[Symbol.iterator] = function () {
+  let n = 0;
+  done = false;
+  return {
+    next() {
+      n += 3;
+      if (n == 300) {
+        done = true;
+      }
+      return { value: n, done: done };
+    },
+  };
+};
+
+for (let x of myObj) {
+  console.log(x);
+}
