@@ -112,24 +112,42 @@ const Symbol = new Set();
 Symbol.add("a");
 console.log(Symbol);
 
-
 //Create a Set and add variables:
 // Create Variables
 const a = "a";
 const b = "b";
 const c = "c";
 
-const letter3 =new Set()
-letter3.add(b)
+const letter3 = new Set();
+letter3.add(b);
 console.log(letter3);
 
-
 //forEach
-const letters5 = new Set(["a","b","c"]);
+const letters5 = new Set(["a", "b", "c"]);
 console.log(letters5);
-let text="";
-letters5.forEach(function(value){
+let text = "";
+letters5.forEach(function (value) {
   // console.log(value);
   text += value;
-})
-console.log( typeof text);
+});
+console.log(typeof text);
+
+
+
+
+//The values() Method
+//The values() method returns an Iterator object containing all the values in a Set:
+const arr = [1, 2, 3, 4, 9, 10];
+
+const arrSet = new Set(arr);
+// console.log(arrSet);
+//Set(6) { 1, 2, 3, 4, 9, 10 }
+const vArrSet = arrSet.values();
+console.log(vArrSet);
+//[Set Iterator] { 1, 2, 3, 4, 9, 10 }
+num = 0
+for(let r of vArrSet){
+  console.log(r);
+  text += r
+}
+console.log( num);
