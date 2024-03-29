@@ -132,9 +132,6 @@ letters5.forEach(function (value) {
 });
 console.log(typeof text);
 
-
-
-
 //The values() Method
 //The values() method returns an Iterator object containing all the values in a Set:
 const arr = [1, 2, 3, 4, 9, 10];
@@ -145,9 +142,50 @@ const arrSet = new Set(arr);
 const vArrSet = arrSet.values();
 console.log(vArrSet);
 //[Set Iterator] { 1, 2, 3, 4, 9, 10 }
-num = 0
-for(let r of vArrSet){
+num = 0;
+for (let r of vArrSet) {
   console.log(r);
-  text += r
+  text += r;
 }
-console.log( num);
+console.log(num);
+
+//The keys() Method
+const key = arrSet.keys();
+console.log(key);
+//[Set Iterator] { 1, 2, 3, 4, 9, 10 }
+
+//The entries() Method
+
+const entriesS = {
+  firstName: "John",
+  lastName: "Doe",
+};
+
+const w = Object.entries(entriesS);
+
+console.log(w);
+//[ [ 'firstName', 'John' ], [ 'lastName', 'Doe' ] ]
+
+
+
+
+
+
+const number = [1, 2, 3, 4, 5];
+// console.log(number);
+const sNumber = new Set(number);
+// console.log(sNumber);
+const iNumber = sNumber.entries();
+// console.log(iNumber);
+//[Set Entries] { [ 1, 1 ], [ 2, 2 ], [ 3, 3 ], [ 4, 4 ], [ 5, 5 ] }
+let tx = "";
+for (const entry of iNumber) {
+  tx += entry;
+  console.log(entry);
+  // [ 1, 1 ]
+  // [ 2, 2 ]
+  // [ 3, 3 ]
+  // [ 4, 4 ]
+  // [ 5, 5 ]
+}
+
