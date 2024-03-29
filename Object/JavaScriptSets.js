@@ -122,3 +122,14 @@ const c = "c";
 const letter3 =new Set()
 letter3.add(b)
 console.log(letter3);
+
+
+//forEach
+const letters5 = new Set(["a","b","c"]);
+console.log(letters5);
+let text="";
+letters5.forEach(function(value){
+  // console.log(value);
+  text += value;
+})
+console.log( typeof text);
