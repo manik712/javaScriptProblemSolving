@@ -107,3 +107,18 @@ get size
 
 
 */
+
+const Symbol = new Set();
+Symbol.add("a");
+console.log(Symbol);
+
+
+//Create a Set and add variables:
+// Create Variables
+const a = "a";
+const b = "b";
+const c = "c";
+
+const letter3 =new Set()
+letter3.add(b)
+console.log(letter3);
