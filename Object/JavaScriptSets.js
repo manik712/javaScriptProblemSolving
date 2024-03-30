@@ -189,3 +189,9 @@ for (const entry of iNumber) {
   // [ 5, 5 ]
 }
 
+//Sets are Objects
+
+
+
+//For a Set, instanceof Set returns true:
+sNumber instanceof Set 
