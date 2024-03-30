@@ -194,4 +194,11 @@ for (const entry of iNumber) {
 
 
 //For a Set, instanceof Set returns true:
-sNumber instanceof Set 
+
+console.log(sNumber instanceof Set );
+//true
+
+const aa =["a","b","c","d"]
+
+console.log(aa instanceof Set);
+//false
