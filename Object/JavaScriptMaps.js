@@ -124,7 +124,6 @@ console.log(typeof add);
 console.log(add instanceof Map);
 //true
 
-
 /*
 
 
@@ -148,3 +147,63 @@ Have default keys	                   Do not have default keys
 
 
 */
+
+/*
+
+Map.forEach()
+The forEach() method invokes a callback for each key/value pair in a Map:
+
+
+*/
+// List all entries
+let text = "";
+add.forEach(function (value, key) {
+  text += key + " = " + value;
+});
+console.log(text, 163);
+
+/*
+
+
+
+Map.entries()
+The entries() method returns an iterator object with the [key,values] in a Map:
+
+
+
+*/
+let text1 = "";
+for (const x of add.entries()) {
+  text1 += x;
+}
+
+console.log(text1);
+//apples,600
+//[key,values]
+
+//Map.keys()
+// The keys() method returns an iterator object with the keys in a Map:
+let text2 = " ";
+for (const y of fruits.keys()) {
+  text2 += y;
+}
+console.log(text2, 190);
+//applesbananasoranges
+
+/*
+
+Map.values()
+The values() method returns an iterator object with the values in a Map:
+
+
+*/
+
+// List all values
+
+let text3 = "";
+for (const x of fruits.values()) {
+  text3 += x;
+}
+console.log(text3);
+
+// 500300200
