@@ -56,3 +56,20 @@ Map(4) {
   'apple' => undefined
 }
 */
+
+
+
+/*
+Map.set()
+You can add elements to a Map with the set() method:
+
+*/
+
+const add = new Map()
+
+console.log(add)
+//Map(0) {}
+
+add.set("apples", 500);
+console.log(add);
+//Map(1) { 'apples' => 500 }
