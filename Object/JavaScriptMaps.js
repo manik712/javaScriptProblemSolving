@@ -85,3 +85,19 @@ console.log(add);
 
 //get value by using get() method
 console.log(add.get("apples"));
+
+/*
+Map.size
+The size property returns the number of elements in a Map:
+
+
+
+*/
+console.log(add.size);
+
+//Map.delete()
+
+console.log(fruitsS.delete("oranges"),100);
+
+//true 
+//false
