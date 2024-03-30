@@ -97,7 +97,22 @@ console.log(add.size);
 
 //Map.delete()
 
-console.log(fruitsS.delete("oranges"),100);
+console.log(fruitsS.delete("oranges"), 100);
 
-//true 
+//true
 //false
+
+
+
+//Map.has()
+console.log(fruitsS.has("oranges"))
+//false
+
+
+
+//Map.clear()
+
+console.log(fruitsS.clear());
+
+//undefined
+
