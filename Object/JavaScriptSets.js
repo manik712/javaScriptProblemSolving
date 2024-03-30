@@ -200,5 +200,7 @@ console.log(sNumber instanceof Set );
 
 const aa =["a","b","c","d"]
 
+
+//without set instanceof Set returns false 
 console.log(aa instanceof Set);
 //false
