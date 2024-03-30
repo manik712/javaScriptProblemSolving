@@ -102,13 +102,9 @@ console.log(fruitsS.delete("oranges"), 100);
 //true
 //false
 
-
-
 //Map.has()
-console.log(fruitsS.has("oranges"))
+console.log(fruitsS.has("oranges"));
 //false
-
-
 
 //Map.clear()
 
@@ -116,3 +112,39 @@ console.log(fruitsS.clear());
 
 //undefined
 
+//Maps are Objects
+
+//typeof returns object:
+
+console.log(typeof add);
+//object
+
+//instanceof Map returns true:
+
+console.log(add instanceof Map);
+//true
+
+
+/*
+
+
+
+
+
+   
+JavaScript Objects vs Maps
+Differences between JavaScript Objects and Maps:
+
+Object                       	     Map
+Not directly iterable     	       Directly iterable
+Do not have a size property    	    Have a size property
+Keys must be Strings (or Symbols)	  Keys can be any datatype
+Keys are not well ordered	          Keys are ordered by insertion
+Have default keys	                   Do not have default keys
+
+
+
+
+
+
+*/
