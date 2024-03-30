@@ -36,6 +36,7 @@ const fruits = new Map([
   ["oranges", 200],
 ]);
 console.log(fruits);
+
 //Map(3) { 'apples' => 500, 'bananas' => 300, 'oranges' => 200 }
 
 // const fruits = new Map([
@@ -57,7 +58,13 @@ Map(4) {
 }
 */
 
-
+//key can be any data type
+const fruitsS = new Map([
+  [50, 500],
+  ["bananas", 300],
+  ["oranges", 200],
+]);
+console.log(fruitsS);
 
 /*
 Map.set()
@@ -65,11 +72,16 @@ You can add elements to a Map with the set() method:
 
 */
 
-const add = new Map()
+const add = new Map();
 
-console.log(add)
+console.log(add);
 //Map(0) {}
 
 add.set("apples", 500);
+//can update
+add.set("apples", 600);
 console.log(add);
 //Map(1) { 'apples' => 500 }
+
+//get value by using get() method
+console.log(add.get("apples"));
