@@ -37,3 +37,31 @@ const x1 = function (a, b) {
 };
 
 let z = x(4, 3);
+console.log(z);
+
+/*
+Semicolons are used to separate executable JavaScript statements.
+Since a function declaration is not an executable statement, it is not common to end it with a semicolon.
+
+*/
+
+//Function Expressions
+
+1;
+function sleep() {
+  console.log("Sleeping");
+}
+sleep();
+
+//or
+2;
+const sleep = function () {
+  console.log("Sleeping");
+};
+sleep();
+
+//The function above is 
+//an anonymous function = a function without a name 
+
+//dag =
+//khotiyan =329
