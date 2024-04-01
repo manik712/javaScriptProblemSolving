@@ -67,16 +67,22 @@ sleep();
 
 //Function Hoisting
 
-
-
-
 //v.v.i
 //Functions defined using an expression are not hoisted.
 
+console.log(hoisted());
 
-console.log(hoisted())
-
-const hoisted =function () {
+const hoisted = function () {
   //code
-}
+};
 //ReferenceError: Cannot access 'hoisted' before initialization
+
+
+
+
+
+//Self-Invoking Functions
+
+(function () {
+  console.log("Self-Invoking Functions");
+})();
