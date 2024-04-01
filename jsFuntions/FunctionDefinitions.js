@@ -47,11 +47,11 @@ Since a function declaration is not an executable statement, it is not common to
 
 //Function Expressions
 
-1;
-function sleep() {
-  console.log("Sleeping");
-}
-sleep();
+// 1;
+// function sleep() {
+//   console.log("Sleeping");
+// }
+// sleep();
 
 //or
 2;
@@ -60,8 +60,23 @@ const sleep = function () {
 };
 sleep();
 
-//The function above is 
-//an anonymous function = a function without a name 
+//The function above is
+//an anonymous function = a function without a name
 
-//dag =
-//khotiyan =329
+//The Function() Constructor
+
+//Function Hoisting
+
+
+
+
+//v.v.i
+//Functions defined using an expression are not hoisted.
+
+
+console.log(hoisted())
+
+const hoisted =function () {
+  //code
+}
+//ReferenceError: Cannot access 'hoisted' before initialization
