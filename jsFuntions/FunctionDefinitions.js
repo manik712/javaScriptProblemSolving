@@ -70,19 +70,46 @@ sleep();
 //v.v.i
 //Functions defined using an expression are not hoisted.
 
-console.log(hoisted());
 
-const hoisted = function () {
-  //code
-};
+
+
+
+
+
+// console.log(hoisted());
+
+// const hoisted = function () {
+//   //code
+// };
+
 //ReferenceError: Cannot access 'hoisted' before initialization
 
+//Self-Invoking Functions=IIFE=immediately invoked functions expression
 
 
 
 
-//Self-Invoking Functions
+
 
 (function () {
   console.log("Self-Invoking Functions");
 })();
+//The function above is actually an anonymous self-invoking function (function without name).
+
+
+
+
+
+
+
+//Functions Can Be Used as Values
+
+function myFunction(a, b) {
+  // return a * b;
+  // return undefined
+}
+
+let Values = myFunction(4, 3);
+console.log(Values);
+
+
