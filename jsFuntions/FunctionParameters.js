@@ -25,3 +25,11 @@ JavaScript functions do not check the number of arguments received.
 const j = (a, b) => a * b;
 
 console.log(j(3, 4, 5, 7));
+
+
+
+//If a function is called with missing arguments (less than declared), the missing values are set to undefined.
+const n =(a, b) => a*b;
+
+console.log(n(3));
+//NaN
