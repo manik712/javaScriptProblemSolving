@@ -70,12 +70,6 @@ sleep();
 //v.v.i
 //Functions defined using an expression are not hoisted.
 
-
-
-
-
-
-
 // console.log(hoisted());
 
 // const hoisted = function () {
@@ -86,30 +80,34 @@ sleep();
 
 //Self-Invoking Functions=IIFE=immediately invoked functions expression
 
-
-
-
-
-
 (function () {
   console.log("Self-Invoking Functions");
 })();
 //The function above is actually an anonymous self-invoking function (function without name).
 
-
-
-
-
-
-
 //Functions Can Be Used as Values
 
 function myFunction(a, b) {
-  // return a * b;
+  return a * b;
   // return undefined
 }
 
 let Values = myFunction(4, 3);
+// let Values = myFunction(4, 3)*2
+//return 24
 console.log(Values);
 
+//A function defined as the property of an object, is called a method to the object.
+// A function designed to create new objects, is called an object constructor.
 
+//Arrow Functions
+//Arrow functions allows a short syntax for writing function expressions.
+//You don't need the function keyword, the return keyword, and the curly brackets.
+
+//ES5
+const y = function (a, b) {
+  return a * b;
+};
+//ES6
+//arrow function
+const m = (a, b) => a * b;
