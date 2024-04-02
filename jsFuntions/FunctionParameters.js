@@ -26,19 +26,42 @@ const j = (a, b) => a * b;
 
 console.log(j(3, 4, 5, 7));
 
-
-
 //If a function is called with missing arguments (less than declared), the missing values are set to undefined.
-const n =(a, b) => a*b;
+const n = (a, b) => a * b;
 //b=undefined
 console.log(n(3));
 //NaN
 
-
 //Default Parameters
 
-const m=(p,t=4)=>p*t
+const m = (p, t = 4) => p * t;
 console.log(m(3));
 //12
-console.log(m(3,5));
+console.log(m(3, 5));
 //15
+
+
+
+
+
+
+
+
+
+x = findMax(1, 123, 500, 115, 44, 88);
+
+function findMax() {
+  let max = -Infinity;
+  for (let i = 0; i < arguments.length; i++) {
+    if (arguments[i] > max) {
+      max = arguments[i];
+    }
+  }
+  return max;
+}
+console.log(x);
+
+
+
+
+
