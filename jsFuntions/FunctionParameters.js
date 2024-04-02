@@ -40,14 +40,6 @@ console.log(m(3));
 console.log(m(3, 5));
 //15
 
-
-
-
-
-
-
-
-
 x = findMax(1, 123, 500, 115, 44, 88);
 
 function findMax() {
@@ -62,18 +54,12 @@ function findMax() {
 console.log(x);
 //500
 
-
-
-
-
-
 x1 = sumAll(1, 123, 500, 115, 44, 88);
 
 function sumAll() {
-  let sum = 0
+  let sum = 0;
   for (let i = 0; i < arguments.length; i++) {
-    sum +=arguments[i]
-
+    sum += arguments[i];
   }
   return sum;
 }
@@ -81,3 +67,30 @@ function sumAll() {
 console.log(x1);
 //871
 
+//Arguments are Passed by Value
+
+/*
+The parameters, in a function call, are the function's arguments.
+
+JavaScript arguments are passed by value: The function only gets to know the values, not the argument's locations.
+
+If a function changes an argument's value, it does not change the parameter's original value.
+
+Changes to arguments are not visible (reflected) outside the function.
+
+*/
+
+//Arguments are Passed by Value
+function a(x) {
+  x.manik = 8;
+  return x.manik * x.sarker;
+}
+
+let h = {
+  manik: 4,
+  sarker: 5,
+};
+console.log(a(h));
+//40
+console.log(h);
+//{manik: 8,sarker:5}
