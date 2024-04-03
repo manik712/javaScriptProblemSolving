@@ -11,5 +11,31 @@ const w = {
     console.log(`${this.firstName} water the tree`);
   },
 };
-w.water()
+w.water();
 
+//in javascript all functions are methods
+
+//The JavaScript call() Method
+
+// The call() method is a predefined JavaScript method.
+
+// It can be used to invoke (call) a method with an owner object as an argument (parameter).
+//With call(), an object can use a method belonging to another object.
+
+// The JavaScript call() Method
+const person = {
+  fullName: function() {
+    return this.firstName + " " + this.lastName;
+  }
+}
+const person1 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+const person2 = {
+  firstName:"Mary",
+  lastName: "Doe"
+}
+
+// This will return "John Doe":
+console.log(person.fullName.call(person2));
