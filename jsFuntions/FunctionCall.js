@@ -39,3 +39,24 @@ const person2 = {
 
 // This will return "John Doe":
 console.log(person.fullName.call(person2));
+
+
+/*
+
+The call() Method with Arguments
+The call() method can accept arguments:
+
+*/
+
+const persons = {
+  fullName: function(city, country) {
+    return this.firstName + " " + this.lastName + "," + city + "," + country;
+  }
+}
+
+const person3 = {
+  firstName:"John",
+  lastName: "Doe"
+}
+
+console.log(persons.fullName.call(person3, "Oslo", "Norway"),62);
