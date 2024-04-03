@@ -67,4 +67,21 @@ const x = {
   },
 };
 
-x.c()
+x.c();
+
+//Invoking a function as a global function, causes the value of this to be the global object.
+// Using the window object as a variable can easily crash your program.
+
+//Invoking a Function as a Method
+
+// Example/
+const myObject = {
+  firstName: "John",
+  lastName: "Doe",
+  fullName: function () {
+    return this.firstName + " " + this.lastName;
+  },
+};
+myObject.fullName(); // Will return "John Doe"
+
+//Invoking a Function with a Function Constructor
