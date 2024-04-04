@@ -27,3 +27,21 @@ function jFunction() {
   return b * b;
 }
 console.log(jFunction());
+
+
+
+/*
+In a web page, global variables belong to the page.
+
+Global variables can be used (and changed) by all other scripts in the page.// var
+
+In the first example, a is a local variable.
+
+A local variable can only be used inside the function where it is defined. It is hidden from other functions and other scripting code.
+
+Global and local variables with the same name are different variables. Modifying one, does not modify the other.
+
+
+
+
+*/
