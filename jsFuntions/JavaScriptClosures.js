@@ -4,19 +4,14 @@
 //Global Variables
 //A function can access all variables defined inside the function, like this
 
-
 // Example
-
 
 function myFunction() {
   let a = 4;
   //here the a is local variable
-  return a * a
-};
+  return a * a;
+}
 console.log(myFunction());
-
-
-
 
 //But a function can also access variables defined outside the function, like this:
 
@@ -27,8 +22,6 @@ function jFunction() {
   return b * b;
 }
 console.log(jFunction());
-
-
 
 /*
 In a web page, global variables belong to the page.
@@ -45,3 +38,11 @@ Global and local variables with the same name are different variables. Modifying
 
 
 */
+
+// Note
+// Variables created without a declaration keyword (var, let, or const) are always global, even if they are created inside a function.
+//example
+function myFunction() {
+  a = 4;
+  //here the a is global variable
+}
