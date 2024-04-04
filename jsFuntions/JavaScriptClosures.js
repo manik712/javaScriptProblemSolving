@@ -52,16 +52,16 @@ function myFunction() {
 
 // Local variables have short lives. They are created when the function is invoked, and deleted when the function is finished.
 
-
 //A Counter Dilemma
-
 
 //JavaScript Closures
 
 const add = (function () {
   let counter = 0;
-  return function () {counter += 1; return counter}
-  
+  return function () {
+    counter += 1;
+    return counter;
+  };
 })();
 
 add();
@@ -70,3 +70,28 @@ add();
 console.log(add());
 
 // the counter is now 4
+
+var num1 = 2;
+var num2 = 3;
+var sum = function () {
+  return num1 + num2;
+};
+console.dir(sum);
+
+
+
+// the closer  is now
+
+
+
+var num3 = 2;
+
+var sum = function () {
+  var num4 = 3;
+  return function () {
+    return num3 + num4;
+  };
+};
+
+var myFun = sum();
+console.dir(myFun);
