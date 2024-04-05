@@ -25,3 +25,24 @@ class Model extends Car {
 let myCarName = new Model("honda","1k2");
 
 console.log(myCarName.show());
+//Inheritance is useful for code reusability: reuse properties and methods of an existing class when you create a new class.
+
+
+//Getters and Setters
+//To add getters and setters in the class, use the get and set keywords.
+
+
+class Cars {
+  constructor(brand) {
+    this.carname = brand;
+  }
+  get cnam() {
+    return this.carname;
+  }
+  set cnam(x) {
+    this.carname = x;
+  }
+}
+
+const myCars = new Cars("Ford");
+console.log(myCars.cnam);
