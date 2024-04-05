@@ -78,11 +78,7 @@ var sum = function () {
 };
 console.dir(sum);
 
-
-
 // the closer  is now
-
-
 
 var num3 = 2;
 
@@ -95,3 +91,35 @@ var sum = function () {
 
 var myFun = sum();
 console.dir(myFun);
+
+//closer
+
+function bankAccount(internalBalance) {
+  var balance = internalBalance;
+  return function () {
+    return balance;
+  };
+}
+
+var account = bankAccount(10000);
+console.log(account());
+//10000
+
+
+
+//or
+
+
+function getCapital(capital) {
+  return function (interest) {
+    return (capital * interest) / 100;
+  };
+}
+
+const account1 = getCapital(1000);
+
+// console.log(account1());
+
+const account2 = account1(25);
+console.log(account2);
+
