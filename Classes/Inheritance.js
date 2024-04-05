@@ -46,3 +46,14 @@ class Cars {
 
 const myCars = new Cars("Ford");
 console.log(myCars.cnam);
+
+//Note: even if the getter is a method, you do not use parentheses when you want to get the property value.
+
+// Hoisting
+// Unlike functions, and other JavaScript declarations, class declarations are not hoisted.
+
+// That means that you must declare a class before you can use it:
+
+
+// Note: For other declarations, like functions, you will NOT get an error when you try to use it before it is declared, 
+// because the default behavior of JavaScript declarations are hoisting (moving the declaration to the top).
