@@ -79,10 +79,11 @@ class Bus {
     this.year = year;
   }
 
-  run(){
-    console.log(this.name + " "+"is running");
+  run(speed){
+    console.log(this.name + " "+"is running"+  speed);
   }
 }
 const car2 = new Bus("COROLLA", 1990);
-car2.run();
-console.log(car2);
+const car3 = new Bus("HONDA", 2000);
+car3.run("100 km par hour");
+console.log(car3);
