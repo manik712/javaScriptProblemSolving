@@ -4,3 +4,26 @@
 
 // JavaScript Promise Object
 // A Promise contains both the producing code and calls to the consuming cod
+
+
+
+let money =false;
+
+console.log("code is 1");
+
+let promise = new Promise(function(resolve,reject){
+  setTimeout(function(){
+    if(money){resolve("you are selected");}
+    else{reject("you are not selected");}
+  },3000)
+})
+
+promise.then(function(value){
+  console.log(value);
+})
+.catch(function(err){
+  console.log(err);
+})
+
+
+console.log("code is 3");
