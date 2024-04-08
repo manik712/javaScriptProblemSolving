@@ -37,7 +37,7 @@ function propose(callback) {
 }
 
 function kissAndMarry() {
-  console.log("she kiss me and marry me");
+  console.log("I kiss her and marry her");
 }
 
 choiceAGirl(function () {
