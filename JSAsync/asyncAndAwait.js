@@ -1,5 +1,14 @@
+//asyncAndAwait
+
+async function asyncAndAwait() {
+  return "hello";
+}
+
+console.log(asyncAndAwait()); // console;
+//Promise { 'hello' }
+
 let age = 18;
-let beautiful = true;
+let beautiful = false;
 let money = true;
 
 function choiceAGirl() {
@@ -52,12 +61,16 @@ function kissAndMarry() {
   return promise;
 }
 
-// call promise
-choiceAGirl()
-  .then(proposeAGirl)
-  .then(propose)
-  .then(kissAndMarry)
-  .then(function () {})
-  .catch(function (err) {
+async function lifeLine() {
+  try {
+    await choiceAGirl();
+    await proposeAGirl();
+    await propose();
+    const message = await kissAndMarry();
+    console.log(message);
+  } catch (err) {
     console.log(err);
-  });
+  }
+}
+
+lifeLine();
