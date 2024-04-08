@@ -29,8 +29,17 @@ console.log("line 3 ");
 console.log("line 1 ");
 setTimeout(function(){
   console.log("line 2 ");
-})
+},200)
 console.log("line 3 ");
 // line 1
 // line 3
 // line 2
+
+//setInterval()
+console.log("line 1 ");
+
+// setInterval(function(){
+//   console.log("line 2 ");
+// },200000)
+
+console.log("line 3 ");
