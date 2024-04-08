@@ -44,3 +44,22 @@ function propose() {
   });
   return promise;
 }
+
+
+function kissAndMarry() {
+  console.log("She kisses  me and marry me");
+  const promise = new Promise(function () {
+    setTimeout(function () {}, 2000);
+  });
+  return promise;
+}
+
+// call promise
+choiceAGirl()
+  .then(proposeAGirl)
+  .then(propose)
+  .then(kissAndMarry)
+  .then(function () {})
+  .catch(function (err) {
+    console.log(err);
+  });
