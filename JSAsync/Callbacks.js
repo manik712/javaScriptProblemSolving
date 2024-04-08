@@ -47,4 +47,12 @@ function calculator(num1, num2, callback) {
 }
 calculator(1, 100, Display);
 
+//or another callback function  
 
+function calculator(num1, num2,callback){
+  let sum = num1 +num2;
+  if(callback) callback(sum);
+}
+calculator(1,100, function(result){
+ console.log(result);
+})
