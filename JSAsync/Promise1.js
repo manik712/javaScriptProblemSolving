@@ -29,3 +29,18 @@ function proposeAGirl() {
   });
   return promise;
 }
+
+
+function propose() {
+  console.log("I propose a girl");
+  const promise = new Promise(function (res, rej) {
+    setTimeout(function () {
+      if (money) {
+        res();
+      } else {
+        rej("you are gorib,don't try to do this again");
+      }
+    }, 3000);
+  });
+  return promise;
+}
