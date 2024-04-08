@@ -25,3 +25,12 @@ console.log("line 3 ");
 // line 3
 
 
+//Asynchronous
+console.log("line 1 ");
+setTimeout(function(){
+  console.log("line 2 ");
+})
+console.log("line 3 ");
+// line 1
+// line 3
+// line 2
