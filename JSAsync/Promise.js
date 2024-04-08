@@ -10,14 +10,17 @@
 let money =false;
 
 console.log("code is 1");
-
+//definition
 let promise = new Promise(function(resolve,reject){
   setTimeout(function(){
     if(money){resolve("you are selected");}
     else{reject("you are not selected");}
-  },3000)
+  },5000)
 })
 
+
+
+//call
 promise.then(function(value){
   console.log(value);
 })
@@ -25,5 +28,7 @@ promise.then(function(value){
   console.log(err);
 })
 
+//you are not selected
 
 console.log("code is 3");
+
