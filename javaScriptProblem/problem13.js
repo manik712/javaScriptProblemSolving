@@ -11,3 +11,5 @@ const array = ["hello", "world", "mango"];
 
 const uppercase=array.map(arr=>arr.toUpperCase())
 console.log(uppercase);
+//[ 'HELLO', 'WORLD', 'MANGO' ]
+
