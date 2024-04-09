@@ -7,3 +7,12 @@ function validateForm() {
     return false;
   }
 }
+
+//input validation
+
+function myFunction() {
+  const y = document.getElementById("numb").value;
+  if (isNaN(y) || y < 0 || y > 10 || " ") {text="invalid";
+  }else{text="ok";}
+  document.getElementById("demo").innerHTML = text;
+}
