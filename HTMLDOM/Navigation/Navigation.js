@@ -3,3 +3,7 @@ const a = document.getElementById("demo");
 //hello
 const b =a.firstChild.nodeValue;
 console.log(b);
+//hello
+const c = a.childNodes[0].nodeValue;
+console.log(c);
+//hello
