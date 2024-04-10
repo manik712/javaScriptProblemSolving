@@ -26,11 +26,20 @@ function mouseovers() {
 }
 
 
+
+
 //mouseout
 function mouseDown() {
   const element = document.getElementById("demo");
   element.innerHTML += "mouseOut<br>";
 }
+
+//clicked
+function clicked(){
+  const element =document.getElementById("demo");
+  element.innerHTML+="clicked<br>"
+}
+
 //mouseover
 const add = document.getElementById("add");
 add.addEventListener("mouseover", mouseovers);
@@ -39,3 +48,6 @@ add.addEventListener("mouseover", mouseovers);
 const adds = document.getElementById("add");
 add.addEventListener("mouseout", mouseDown);
 
+//clicked
+const click=document.getElementById("add");
+click.addEventListener('click',clicked)
