@@ -10,7 +10,10 @@
 
   </style>
 </head>
-<body>
+<!-- <body onload="console.log('loaded');" > -->
+<body onunload="console.log('unloaded');" >
+<a href="text.html">text</a>
+
    <h1 id="h1" onclick="this.innerHTML='manik'" >click me</h1>
   <h2 id="h2" onclick="clickHer()">click her </h2>
   <h3 id="h3" onclick="clickHim(this)">click me</h3>

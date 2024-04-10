@@ -21,3 +21,5 @@ const events = document.querySelector("#h5")
 events.onclick =function(){
   console.log("hay manik");
 }
+
+//The onload and onunload Events
