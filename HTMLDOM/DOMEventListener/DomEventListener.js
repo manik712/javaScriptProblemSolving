@@ -71,12 +71,21 @@ click.addEventListener("click", clicked);
 
 //Add an Event Handler to the window Object
 
+
+
+
+
+
 //Event Bubbling or Event Capturing?
 
 //event Bubbling by default
 // event Capturing is not  by default
 //element.addEventListener(event, function, true); =capturing
 // false by default
+
+
+
+
 
 function buttonClick() {
   console.log("buttonClick");
@@ -93,3 +102,7 @@ but.addEventListener("click", buttonClick, true);
 
 const container = document.getElementById("container");
 container.addEventListener("click", containerClick, true);
+
+
+//The removeEventListener() method
+
