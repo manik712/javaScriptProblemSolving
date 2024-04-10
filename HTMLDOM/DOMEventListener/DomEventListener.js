@@ -1,14 +1,37 @@
-function myClick() {
-  console.log("hello world");
-}
+
 
 const button = document.getElementById("button");
 
 // button.addEventListener('click',myClick)
 
-button.addEventListener("click", function myClick() {
-  console.log("hello world");
-});
+
+
+// button.addEventListener("click", function myClick() {
+//   console.log("hello world");
+// });
+
+
+
+
+
+
+//passing parameter 
+
+function myClick(text) {
+  console.log(text);
+}
+
+//addEventListener
+button.addEventListener("click", function (){
+
+myClick('hello world');
+}
+);
+
+
+
+
+
 
 //You can easily remove an event listener by using the removeEventListener() method.
 //element.addEventListener(event, function, useCapture);
@@ -35,10 +58,21 @@ function mouseDown() {
 }
 
 //clicked
+
+// function clicked(){
+//   const element =document.getElementById("demo");
+//   element.innerHTML+="clicked<br>"
+// }
+
+
+
+
 function clicked(){
   const element =document.getElementById("demo");
   element.innerHTML+="clicked<br>"
 }
+
+
 
 //mouseover
 const add = document.getElementById("add");
@@ -49,5 +83,20 @@ const adds = document.getElementById("add");
 add.addEventListener("mouseout", mouseDown);
 
 //clicked
+
+
 const click=document.getElementById("add");
 click.addEventListener('click',clicked)
+
+
+
+// passing parameter 
+
+// const click=document.getElementById("add");
+// click.addEventListener('click',function(){
+// clicked();
+// })
+
+
+//Add an Event Handler to the window Object
+
