@@ -19,7 +19,15 @@ function displayDate() {
 //Assign Events Using the HTML DOM
 const events = document.querySelector("#h5")
 events.onclick =function(){
-  console.log("hay manik");
+  console.log("hi manik");
 }
 
 //The onload and onunload Events
+
+
+
+//The onchange Event
+
+function upperCase(){
+  console.log('upperCase');
+}
