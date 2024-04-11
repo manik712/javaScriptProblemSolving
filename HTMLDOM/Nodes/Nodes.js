@@ -13,5 +13,13 @@ const p1 = document.getElementById("p1");
 element.insertBefore(para, p1);
 
 //Removing Existing HTML Elements
+
+// const p2 = document.getElementById("p2");
+// p2.remove();
+
+// // removeChild()
+
 const p2 = document.getElementById("p2");
-p2.remove();
+const div1 = document.getElementById("div1");
+
+div1.removeChild(p2);
