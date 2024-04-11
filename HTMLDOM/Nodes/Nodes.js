@@ -10,4 +10,8 @@ console.log(element.appendChild(para));
 
 //Creating new HTML Elements - insertBefore()
 const p1 = document.getElementById("p1");
-element.insertBefore(para,p1)
+element.insertBefore(para, p1);
+
+//Removing Existing HTML Elements
+const p2 = document.getElementById("p2");
+p2.remove();
