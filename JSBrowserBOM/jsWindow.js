@@ -1,5 +1,5 @@
 // JS Browser BOM
-let myWindow;
+var myWindow;
 // //The Browser Object Model (BOM) allows JavaScript to "talk to" the browser.
 // // The Window Object
 // /*
@@ -48,6 +48,25 @@ const height = document.getElementById("hight");
 width.innerHTML = "the width is:" + window.innerWidth;
 height.innerHTML = "the height is:" + window.innerHeight;
 
+const Swidth = document.getElementById("Swidth");
+const Sheight = document.getElementById("Sheight");
+const SavailWidth = document.getElementById("SavailWidth");
+const SavailHeight = document.getElementById("SavailHeight");
+const ScolorDepth = document.getElementById("ScolorDepth");
+const SpixelDepth = document.getElementById("SpixelDepth");
+
+
+
+Swidth.innerHTML = "the Screen width is:" + screen.width;
+Sheight.innerHTML = "the Screen height is:" + screen.height;
+SavailWidth.innerHTML = "the Screen availWidth is:" + screen.availWidth;
+SavailHeight.innerHTML = "the Screen availHeight is:" + screen.availHeight;
+ScolorDepth.innerHTML = "the Screen colorDepth is:" + screen.colorDepth;
+SpixelDepth.innerHTML = "the Screen pixelDepth is:" + screen.pixelDepth;
+
+
+
+
 
 
 function openWindow() {
@@ -55,7 +74,10 @@ function openWindow() {
 }
 
 function closeWindow() {
-  // console.log("closeWindow");
-  myWindow.close()
-  
+  if (myWindow && !myWindow.closed) {
+    // Checks if myWindow exists and if it's still open
+    myWindow.close();
+  } else {
+    console.log("Window already closed or was never opened.");
+  }
 }
