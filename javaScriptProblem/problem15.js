@@ -22,5 +22,14 @@ let job = {
 // console.log(mergeObjects(person, job));
 
 
-let employee = Object.assign(person, job);
-console.log(employee);
+//or
+
+// let employee = Object.assign(person, job);
+// console.log(employee);
+
+
+
+//or
+let myEmployee = { ...person,  ...job };
+
+console.log(myEmployee);
