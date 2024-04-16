@@ -14,8 +14,13 @@ let job = {
 };
 
 
-function mergeObjects(obj1, obj2) {
-  return { ...obj1, ...obj2 };
-}
 
-console.log(mergeObjects(person, job));
+// function mergeObjects(obj1, obj2) {
+//   return { ...obj1, ...obj2 };
+// }
+
+// console.log(mergeObjects(person, job));
+
+
+let employee = Object.assign(person, job);
+console.log(employee);
