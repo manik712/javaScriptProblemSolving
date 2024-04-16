@@ -13,5 +13,6 @@ function doubleAndReturnArgs(arr, ...args) {
 
 // Example usage:
 const result = doubleAndReturnArgs([1, 2, 3], 4, 5, 6);
-console.log(result); // [1, 2, 3, 8, 10, 12]
+console.log(result);
+ // [1, 2, 3, 8, 10, 12]
 
