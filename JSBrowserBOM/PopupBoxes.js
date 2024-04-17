@@ -8,6 +8,8 @@
 
 const confirm = document.getElementById("confirm");
 
+const prompt = document.getElementById("prompt");
+
 function alertBox() {
   alert("hello world");
 }
@@ -21,4 +23,15 @@ function ConfirmBox() {
   }
 
   confirm.innerHTML = text;
+}
+
+function promptT() {
+  const person = window.prompt("Please enter your name:", "Manik, ");
+  let text;
+  if (person === null || person === " ") {
+    text = "you cancelled the prompt";
+  } else {
+    text = "hello! " +  person  + " How are you?";
+  }
+  prompt.innerHTML = text;
 }
