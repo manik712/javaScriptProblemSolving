@@ -14,6 +14,9 @@ function alertBox() {
   alert("hello world");
 }
 
+
+//confirm
+
 function ConfirmBox() {
   let text;
   if (window.confirm("please ...")) {
@@ -24,7 +27,7 @@ function ConfirmBox() {
 
   confirm.innerHTML = text;
 }
-
+//prompt
 function promptT() {
   const person = window.prompt("Please enter your name:", "Manik, ");
   let text;
