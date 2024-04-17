@@ -5,3 +5,7 @@
   // and
   
 // Prompt box.
+
+function alertBox(){
+  alert("hello world")
+}
