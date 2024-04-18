@@ -1,16 +1,24 @@
 // Timing Events
+const setTimeout = document.getElementById("setTimeout");
+const setInterval = document.getElementById("setInterval");
 
 
-
-
-
-
-
-function timeOut(){
+//timeOut()
+function timeOut() {
   console.log("Time Out");
 }
 
 
-function interval(){
+//stopTimeOut()
+function stopTimeOut() {}
+
+
+//interval()
+function interval() {
   console.log("Interval");
 }
+
+
+//stopInterval()
+
+function stopInterval() {}
