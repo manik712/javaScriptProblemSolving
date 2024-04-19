@@ -20,7 +20,7 @@ function setCookie(cname, cValue, eXdays) {
 
 //getNameCookie()
 function getCookie(cname) {
-  let name =cname + "=" 
+  let name = cname + "=";
   // console.log(document.cookie);
   //name=Manik; userName=Jace
 
@@ -50,22 +50,12 @@ function getUserNameCookie() {
   console.log("getting SetUserNameCookie");
 }
 
-
-
-
-
-
 // checkCookie
 
-
-
-
-
-
-function checkCookie(cname,  eXdays) {
+function checkCookie(cname, eXdays) {
   let m = getCookie(cname);
   if (m != "") {
-   alert("Welcome again " + m);
+    alert("Welcome again " + m);
   } else {
     j = prompt("Please enter your name:", "");
     if (j != "" && j != null) {
@@ -74,46 +64,18 @@ function checkCookie(cname,  eXdays) {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // function setCookie(cname, cValue, eXdays) {
 //   const d = new Date();
 //   d.setTime(d.getTime() + eXdays * 24 * 60 * 60 * 1000); // sets the expiration time
 //   let expires = "expires=" + d.toUTCString(); // creates the expiration part of the cookie string
-  
+
 //   document.cookie = cname + "=" + cValue + ";" + expires + ";path=/"; // corrects the syntax to include both the expiration and path
 // }
-
 
 // function getCookie(cname) {
 //   let name = cname + "="; // creates the correct key to search for in the cookie string
 //   let ca = document.cookie.split(';');
-  
+
 //   for (let i = 0; i < ca.length; i++) {
 //     let c = ca[i].trim(); // use trim to remove whitespace instead of the while loop
 //     if (c.indexOf(name) == 0) { // checks if the cookie string starts with the key
