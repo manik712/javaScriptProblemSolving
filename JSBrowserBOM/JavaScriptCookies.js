@@ -55,6 +55,50 @@ function getUserNameCookie() {
 
 
 
+// checkCookie
+
+
+
+
+
+
+function checkCookie(cname,  eXdays) {
+  let m = getCookie(cname);
+  if (m != "") {
+   alert("Welcome again " + m);
+  } else {
+    j = prompt("Please enter your name:", "");
+    if (j != "" && j != null) {
+      setCookie(cname, j, eXdays);
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // function setCookie(cname, cValue, eXdays) {
