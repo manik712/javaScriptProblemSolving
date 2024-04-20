@@ -21,3 +21,6 @@ function  clearLocalStorage(){
 }
 
 
+//session storage  same as local storage
+
+
