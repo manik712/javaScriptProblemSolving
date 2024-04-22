@@ -21,3 +21,22 @@
   
   /* font-family: Tahoma, Verdana, sans-serif; */
 }
+
+
+/* Media Queries for Responsive Design */
+
+
+@media screen and (max-width: 600px) {
+  .display {
+    margin-top: 15vh;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 0.9rem;
+  }
+}
