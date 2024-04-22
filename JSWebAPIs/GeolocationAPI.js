@@ -18,14 +18,49 @@ function displayLocate() {
 
 //callBack function
 
+// function showPosition(position) {
+//   display.innerHTML =
+//     "latitude:" +
+//     position.coords.latitude +
+//     "<br>Longitude:" +
+//     position.coords.longitude +
+//     "<br>altitude:" +
+//     position.coords.heading;
+// }
+
+//
+
 function showPosition(position) {
+  let latitude = position.coords.latitude;
+  let longitude = position.coords.longitude;
+
+  let latDegree = Math.floor(latitude);
+
+  let latMinutes = Math.floor((latitude - latDegree) * 60);
+  let latSeconds = Math.round((latitude - latDegree - latMinutes / 60) * 3600);
+  console.log(latSeconds);
+
+  let longDegree = Math.floor(longitude);
+  let longMinutes = Math.floor((longitude - longDegree) * 60);
+  let longSeconds = Math.round(
+    (longitude - longDegree - longMinutes / 60) * 3600
+  );
+
   display.innerHTML =
-    "latitude:" +
-    position.coords.latitude +
-    "<br>Longitude:" +
-    position.coords.longitude +
-    "<br>altitude:" +
-    position.coords.heading;
+    "Latitude: " +
+    latDegree +
+    "° " +
+    latMinutes +
+    "' " +
+    latSeconds +
+    "''<br>" +
+    "Longitude: " +
+    longDegree +
+    "° " +
+    longMinutes +
+    "' " +
+    longSeconds +
+    "''<br>"+"Think u for using this"
 }
 
 // showError
