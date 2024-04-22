@@ -3,18 +3,25 @@
 // Geolocation is most accurate for devices with GPS, like smartphones.\
 
 const display = document.getElementById("display");
-
+let watchId;
 // displayLocate
 
 function displayLocate() {
   if (navigator.geolocation) {
     // navigator.geolocation.getCurrentPosition(showPosition, showError);
     //  watchPosition live
-    navigator.geolocation.watchPosition(showPosition, showError);
+
+    if (watchId) {
+      navigator.geolocation.clearWatch(watchId);
+    }
+    watchId = navigator.geolocation.watchPosition(showPosition, showError);
   } else {
     display.innerHTML = "Geolocation is not supported by this browser.";
   }
 }
+
+
+
 
 //callBack function
 
@@ -60,7 +67,8 @@ function showPosition(position) {
     longMinutes +
     "' " +
     longSeconds +
-    "''<br>"+"Think u for using this"
+    "''<br>" +
+    "Think u for using this";
 }
 
 // showError
