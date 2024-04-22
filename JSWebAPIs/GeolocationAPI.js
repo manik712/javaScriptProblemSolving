@@ -8,7 +8,9 @@ const display = document.getElementById("display");
 
 function displayLocate() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition, showError);
+    // navigator.geolocation.getCurrentPosition(showPosition, showError);
+    //  watchPosition live
+    navigator.geolocation.watchPosition(showPosition, showError);
   } else {
     display.innerHTML = "Geolocation is not supported by this browser.";
   }
@@ -26,7 +28,7 @@ function showPosition(position) {
     position.coords.heading;
 }
 
-// showError   
+// showError
 
 function showError(error) {
   switch (error.code) {
