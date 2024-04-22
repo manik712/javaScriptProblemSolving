@@ -1,0 +1,14 @@
+.display{
+  text-align: center;
+ 
+}
+
+
+.button{
+
+  background-color:rgb(235, 225, 223);
+  color: black;
+  font-family: "Lucida Console", "Courier New", monospace;
+  text-shadow: 1px 1px;
+
+}
