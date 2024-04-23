@@ -7,6 +7,7 @@ function loadData(){
     data.innerHTML = this.responseText;
   }
   xhr.open('GET',"./ajax.txt")
+  xhr.send();
 }
 
 
