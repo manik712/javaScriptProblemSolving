@@ -115,7 +115,7 @@ function displayLocate() {
     if (watchId) {
       navigator.geolocation.clearWatch(watchId);
     }
-    watchId = navigator.geolocation.watchPosition(showPosition, showError);
+    watchId = navigator.geolocation.getCurrentPosition(showPosition, showError);
     // Hide the "Press Me To Display Your Location" button
     document.querySelector(".button").style.display = "none";
     // Show the "clean" button
