@@ -9,6 +9,10 @@ function sendRequest(method, url, data) {
     xhr.onload = function () {
       // console.log(JSON.parse(this.responseText).userId);
       //1
+
+      if(this.status>=400){
+        reject(`application error and the error is ${this.status}`);
+      }
       resolve(this.response);
     };
 
