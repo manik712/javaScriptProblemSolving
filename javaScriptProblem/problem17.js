@@ -1,10 +1,8 @@
-
 // Create a function that takes voltage and current and returns the calculated power.
 
-
-
-
 function circuitPower(voltage, current) {
-	return voltage*current
+  return voltage * current;
 }
-circuitPower()
+
+console.log(circuitPower(12, 34));
+//408
