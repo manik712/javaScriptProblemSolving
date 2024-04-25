@@ -2,7 +2,7 @@
 
 //sendRequest
 
-function sendRequest(method, url) {
+function sendRequest(method, url, data) {
   const promise = new Promise(function (resolve, reject) {
     const xhr = new XMLHttpRequest();
 
@@ -11,9 +11,14 @@ function sendRequest(method, url) {
       //1
       resolve(this.response);
     };
+
+    xhr.onerror = function () {
+      reject("you have an error");
+    };
+
     xhr.open(method, url);
 
-    xhr.send();
+    xhr.send(data);
     xhr.responseType = "json";
   });
 
@@ -23,20 +28,28 @@ function sendRequest(method, url) {
 //getData....
 
 function getData() {
-  sendRequest("GET", "https://jsonplaceholder.typicode.com/todos/1").then(
-    (responseData) => {
+  sendRequest("GET", "https://jsonplaceholder.typicode.com/todos/1")
+    .then((responseData) => {
       console.log(responseData);
-    }
-  );
+    })
+    .catch((err) => {
+      console.log(err);
+    });
 }
 
 // sendData....
 function sentData() {
-  sendRequest("POST", "https://jsonplaceholder.typicode.com/posts").then(
-    (responseData) => {
-      console.log(responseData);
-    }
-  );
+  sendRequest(
+    "POST",
+    "https://jsonplaceholder.typicode.com/posts",
+    JSON.stringify({
+      title: "foo",
+      body: "bar",
+      userId: 1,
+    })
+  ).then((responseData) => {
+    console.log(responseData);
+  });
 }
 
 //getElement
