@@ -7,12 +7,6 @@ The && operator takes two boolean values,
 
 
 
-
-
-
-
-
-
 function and(a, b) {
   if (a === true && b === true) {
     return true;
