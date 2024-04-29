@@ -13,13 +13,17 @@ losses get 0 points
 
 */
 
-
-function footballerTeamP(wins,draws,losses){
-// Calculate points
-const points = (wins * 3) + (draws * 1) + (losses * 0);
-return points;
-
-
+function footballerTeamP(wins, draws, losses) {
+  
+  let points;
+  if (wins >= 0 && draws >= 0 && losses >= 0) {
+    // Calculate points
+    points = wins * 3 + draws * 1 + losses * 0;
+  } else {
+    points = "Why negative man!";
+  }
+//return
+  return points;
 }
 
-console.log(calculatePoints(3, 1, 2)); 
+console.log(footballerTeamP(3, -3, 2));
