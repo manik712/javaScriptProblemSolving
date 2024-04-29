@@ -11,4 +11,4 @@ function divisible(num){
   }else{return false;}
 
 }
-console.log(divisible(1002));
+console.log(divisible(1));
