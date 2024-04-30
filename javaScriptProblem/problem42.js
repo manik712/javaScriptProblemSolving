@@ -5,11 +5,6 @@ challenge (only syntax errors). Look at the
  function should do.
 */
 
-
-
-
-
-
 function maxNum(n1,n2) {
 	if (n1>n2) {
 	  return n1
@@ -20,3 +15,5 @@ function maxNum(n1,n2) {
 }
 
 console.log(maxNum(2,8));
+
+
