@@ -10,4 +10,6 @@ function createInteger(str) {
  
 }
 
-console.log(createInteger('22'));
+console.log(createInteger('120'));
+console.log(createInteger('qm'));
+//NaN
