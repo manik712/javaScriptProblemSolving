@@ -7,14 +7,14 @@ a single string in the format "last, first".
 
 
 
-// function myConcat(firstName, lastName) {
-//   const first = firstName;
-//   const last = lastName;
-//   const fullName = first.concat(", ", last);
-//   return fullName;
-// }
+function myConcat(firstName, lastName) {
+  const first = firstName;
+  const last = lastName;
+  const fullName = first.concat(", ", last);
+  return fullName;
+}
 
-// console.log(myConcat("manik","sarker"));
+console.log(myConcat("manik","sarker"));
 
 
 
