@@ -10,4 +10,7 @@ function radiansToDeg(radians) {
   return angle;
 }
 
-console.log(radiansToDeg(11));
+console.log(radiansToDeg(20));
+
+
+
