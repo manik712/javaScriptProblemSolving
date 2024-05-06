@@ -18,3 +18,4 @@ function inchesToFeet(value) {
 }
 
 console.log(inchesToFeet(12));
+   
