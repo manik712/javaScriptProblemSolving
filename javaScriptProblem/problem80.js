@@ -16,5 +16,20 @@ invisible.
 
 
 
-const stackBoxes = (n) => Math.pow(n, 2);
-console.log(stackBoxes(1));
+
+// const stackBoxes = (n) => Math.pow(n, 2);
+// console.log(stackBoxes(1));
+
+
+
+
+
+function stackBoxes(n) {
+  if (n < 0) {
+    return "Stacked boxes number would not be negative!";
+  }else{
+    return Math.pow(n, 2);
+  }
+}
+
+console.log(stackBoxes(4));
