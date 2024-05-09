@@ -8,6 +8,7 @@ are needed to cover the whole cube.
 
 */
 
+
 function howManyStocks(n) {
   const totalStocks = 6 * Math.pow(n, 2);
   return totalStocks;
