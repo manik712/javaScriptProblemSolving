@@ -12,7 +12,7 @@ function searchIndex(arr, item) {
       return myArr.indexOf(myArr[i]);
     }
   }
-return -1;
+  return -1;
 }
 
 console.log(searchIndex([1, 2, 3, 4, 65, 3, 2, 78], 655));
