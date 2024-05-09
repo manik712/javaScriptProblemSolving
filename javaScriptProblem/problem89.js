@@ -32,3 +32,28 @@ function stringToNumber(string) {
   return "Input Appropriate Number!";
 }
 console.log(stringToNumber("t"));
+
+
+
+//or
+
+function stringToNumber(s) {
+  const numberDict = {
+      "one": 1,
+      "two": 2,
+      "three": 3,
+      "four": 4,
+      "five": 5,
+      "six": 6,
+      "seven": 7,
+      "eight": 8,
+      "nine": 9,
+      "zero": 0
+  };
+  return numberDict[s];
+}
+
+// Test the function
+console.log(stringToNumber("three"));  // Output: 3
+console.log(stringToNumber("seven"));  // Output: 7
+console.log(stringToNumber("eleven")); // Output: undefined
