@@ -16,4 +16,4 @@ function carNumber(n) {
   }
 }
 
-console.log(carNumber(13));
+console.log(carNumber(0));
