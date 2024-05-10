@@ -4,7 +4,6 @@ Write a JavaScript program to find the minimum number in an array
 
 */
 
-
 function findMaxNumber(arr) {
   const myArr = arr;
   let maxNumber = arr[0];
