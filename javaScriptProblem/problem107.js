@@ -16,4 +16,4 @@ function evenNumber(arr) {
   return newArr;
 }
 
-console.log(evenNumber([2,5,8,9,90,6,36]));
+console.log(evenNumber([2, 5, 8, 9, 90, 6, 36]));
