@@ -23,4 +23,4 @@ function budget(ati) {
     Savings: ati * 0.2,
   };
 }
-console.log(budget(10000));
+console.log(budget(13450));
