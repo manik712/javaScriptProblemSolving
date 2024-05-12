@@ -2,6 +2,30 @@
 Write a JavaScript function to check if a given number is prime.
 */
 
+
+
+function prime(){
+  console.log('prime function');
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function isPrime(num) {
   if (Number.isInteger(num)) {
     if (num === 0 || num === 1) {
@@ -22,4 +46,4 @@ function isPrime(num) {
   }
 }
 
-console.log(isPrime(123));
+// console.log(isPrime(123));
