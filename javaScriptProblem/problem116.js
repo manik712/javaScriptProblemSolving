@@ -4,6 +4,7 @@ Create a function that takes an array of integers and strings.
 Convert integers to strings and return the new array.
 
 */
+
 function numberToString(arr) {
   let arrStr = [];
   for (let i = 0; i < arr.length; i++) {
