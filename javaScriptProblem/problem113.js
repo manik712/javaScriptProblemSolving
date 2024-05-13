@@ -6,6 +6,7 @@ at the start and end of the array.
 
 */
 
+
 function hasSameBread(sandwich1, sandwich2) {
   // Check if the first and last elements of both arrays are the same
   return sandwich1[0] === sandwich2[0] && sandwich1[sandwich1.length - 1] === sandwich2[sandwich2.length - 1];
