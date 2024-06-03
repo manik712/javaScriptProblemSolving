@@ -19,3 +19,7 @@ function rep(str,num){
 
 
 console.log(rep("good",10))
+
+
+
+
