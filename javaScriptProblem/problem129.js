@@ -23,9 +23,9 @@ function halfQuarterEighth(num) {
   if (num > 0) {
     let halt = num / 2;
     arr.push(halt);
-    let quarter = num/4;
+    let quarter = num / 4;
     arr.push(quarter);
-    let eighth = num/8;
+    let eighth = num / 8;
     arr.push(eighth);
   }
   return arr;
