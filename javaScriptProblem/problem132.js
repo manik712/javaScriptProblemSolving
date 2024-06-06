@@ -14,6 +14,14 @@ getMultipliedArr([5, 382, 0]) ➞ [10, 764, 0]
 
 */
 
-function getMultipliedArr(arr){
-   for(let i= 0;)
+function getMultipliedArr(arr) {
+  let result = [];
+  for (let i = 0; i < arr.length; i++) {
+    let value = arr[i] * 2;
+    result.push(value);
+  }
+  return result;
 }
+
+
+console.log(getMultipliedArr([2,4,7]));
