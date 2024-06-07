@@ -25,3 +25,5 @@ function getMultipliedArr(arr) {
 
 
 console.log(getMultipliedArr([2,4,7]));
+
+
