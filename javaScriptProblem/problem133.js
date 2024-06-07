@@ -22,4 +22,11 @@ function and(a ,b){
 }
 
 
-console.log(and(1,0));
+// console.log(and(1,0));
+
+
+function or(a ,b){
+return  a || b === 1 ? 1 : 0;
+}
+
+console.log(or(0,0))
