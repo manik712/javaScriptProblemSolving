@@ -29,4 +29,11 @@ function or(a ,b){
 return  a || b === 1 ? 1 : 0;
 }
 
-console.log(or(0,0))
+// console.log(or(0,0))
+
+
+function not(a){
+ return  a === 1 ?  0 : 1; 
+}
+
+console.log(not(0));
