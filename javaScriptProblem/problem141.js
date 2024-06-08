@@ -22,7 +22,7 @@ function toInt(s) {
   return result;
 }
 
-// console.log(toInt("532"));
+console.log(toInt("532"));
 
 
 
