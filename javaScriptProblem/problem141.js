@@ -17,12 +17,21 @@ toStr(532) ➞ "532"
 
 */
 
-
-function toInt(s){
+function toInt(s) {
   let result = Number(s);
   return result;
 }
 
-console.log(toInt("532"));
+// console.log(toInt("532"));
 
 
+
+
+function toStr(s) {
+  let result = s.toString();
+
+  let result1 = typeof result;
+  return result1;
+}
+
+console.log(toInt(234));
