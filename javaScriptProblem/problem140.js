@@ -31,7 +31,10 @@ function determineLever(arr) {
   }
 }
 
-// Test cases
-console.log(determineLever(["e", "f", "l"]));  // ➞ "first class lever"
-console.log(determineLever(["e", "l", "f"]));  // ➞ "second class lever"
-console.log(determineLever(["f", "e", "l"]));  // ➞ "third class lever"
+// // Test cases
+// console.log(determineLever(["e", "f", "l"]));  // ➞ "first class lever"
+// console.log(determineLever(["e", "l", "f"]));  // ➞ "second class lever"
+// console.log(determineLever(["f", "e", "l"]));  // ➞ "third class lever"
+
+
+console.log(Number("333"));
