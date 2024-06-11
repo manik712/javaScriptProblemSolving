@@ -16,16 +16,16 @@ operation(11, 11) ➞ null
 */
 
 function operation(num1, num2) {
-  if(num1 +num2 ===24){
-    return "add"
-  }else if (num1 * num2 ===24){
-    return "multiplied"
-  }else if (num1/num2===24){
-    return "divided"
-  }else{
-    return null
+  if (num1 + num2 === 24) {
+    return "add";
+  } else if (num1 * num2 === 24) {
+    return "multiplied";
+  } else if (num1 - num2) {
+    return "subtracted";
+  } else if (num1 / num2 === 24) {
+    return "divided";
+  } else {
+    return null;
   }
-
 }
-console.log(operation(2 ,48));
-
+console.log(operation(26, 2));
