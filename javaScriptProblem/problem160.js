@@ -20,7 +20,7 @@ function countD(str) {
   // let count2 = count1.length;
   // return count2;
 
-  if (typeof count1 !== null) {
+  if (count1 !== null) {
     return count1.length;
   } else {
     return 0;
