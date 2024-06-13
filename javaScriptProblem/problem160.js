@@ -1,4 +1,6 @@
 /*
+
+
 Create a function that counts how many D's are in a sentence.
 Examples
 
@@ -15,8 +17,14 @@ function countD(str) {
   let myCount = str.toLowerCase();
   let reg = /[d]/g;
   let count1 = myCount.match(reg);
-  let count2 = count1.length;
-  return count2;
+  // let count2 = count1.length;
+  // return count2;
+
+  if (typeof count1 !== null) {
+    return count1.length;
+  } else {
+    return 0;
+  }
 }
 
-console.log(countD("The rodents hibernated in their den."));
+console.log(countD("The rodents hibernate in their end."));
