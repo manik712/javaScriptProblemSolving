@@ -22,14 +22,37 @@ existsHigher([], 5) ➞ false
 
 */
 
+// function existsHigher(arr, n) {
+
+//   const maxElement = Math.max(...arr);
+//   if(arr.length===0){
+//     return false;
+//   }
+//   if else  (maxElement < n) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(existsHigher([1,4,7],9));
+
+
+
+
 function existsHigher(arr, n) {
+  if (arr.length === 0) {
+    return false;
+  }
 
   const maxElement = Math.max(...arr);
   if (maxElement < n) {
-    return true;
-  } else {
     return false;
+  } else {
+    return true;
   }
 }
 
-console.log(existsHigher([1,4,7],9));
+console.log(existsHigher([], 9)); // Expected output: false
+
+
