@@ -16,7 +16,7 @@ see how you could output them in a way that would work up to 10 or even up to
 function evenNumber(n) {
   let arr = [];
 
-  for (let i = 2; i <= 10000; i += 2) {
+  for (let i = 0; i <= 10; i += 2) {
     arr.push(i);
   }
   return arr;
