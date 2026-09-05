@@ -13,3 +13,5 @@ function countNumber() {
 let number1 = 12345660;
 let allNumbers = countNumber();
 console.log(allNumbers);
+
+

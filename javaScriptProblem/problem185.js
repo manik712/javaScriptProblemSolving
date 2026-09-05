@@ -16,4 +16,4 @@ function reverses(arr){
   return newArr
 }
 
-console.log(reverses([2,3,4]));
+console.log(reverses([2,3,4]));   

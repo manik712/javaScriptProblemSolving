@@ -12,3 +12,8 @@ function numberOfArg(){
 }
 
 console.log(numberOfArg("a","b","c","d","e","f"));
+
+
+
+
+
