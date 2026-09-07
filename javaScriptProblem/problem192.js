@@ -5,3 +5,4 @@ function areaOfATriangle(b,h){
   return a;
 }
 
+console.log(areaOfATriangle(4,4))
