@@ -2,3 +2,9 @@
 
 
 
+function yearsToDays(a){
+  const d = a*365 +" " +"days";
+  return d;
+}
+
+console.log(yearsToDays(4))
