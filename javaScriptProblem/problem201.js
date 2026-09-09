@@ -7,4 +7,4 @@ function isEqual(num1, num2) {
   }
 }
 
-console.log(isEqual(3, 3));
+console.log(isEqual(3, "3"));
