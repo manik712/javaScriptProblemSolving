@@ -1,0 +1,13 @@
+//Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
+
+function makesTen(a, b) {
+  const x = a + b;
+  if (a === 10 || b === 10 || x === 10) {
+    return true;
+  }
+  else {
+    return false;
+  }
+}
+console.log(makesTen(5,3))
+
