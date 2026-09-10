@@ -13,10 +13,10 @@ Create a function that recreates this functionality.
 
 function abs(num){
   if(num < 0){
-    return -num;
+    return num;
   }else{
     return num;
   }
 }
 
-console.log(abs(0));
+console.log(abs(-4));
