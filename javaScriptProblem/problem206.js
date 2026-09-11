@@ -4,4 +4,4 @@ const add = (a, b) => {
   return a + b;
 };
 
-console.log(add(2, 8));
+console.log(add(2, 56));
