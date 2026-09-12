@@ -9,4 +9,6 @@ function areaOfRectangle(hight, width) {
   }
 }
 
-console.log(areaOfRectangle(5, 0));
+console.log(areaOfRectangle(5, 0));//-1
+
+
