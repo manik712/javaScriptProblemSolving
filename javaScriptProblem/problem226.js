@@ -5,11 +5,15 @@ function firstFunction(callback) {
   callback();
 }
 
+firstFunction(secondFunction)
+
 function secondFunction(){
   console.log("line no. 2")
 }
-firstFunction(secondFunction)
 
+
+//line no.1
+//line no. 2
 
 
 
