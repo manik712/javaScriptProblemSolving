@@ -20,5 +20,4 @@ function addUp(num) {
   return addition;
 }
 
-console.log(addUp(600)); //180300
-
+console.log(addUp(600)); //180300 w
