@@ -1,4 +1,6 @@
-//
+//Create a function that returns true
+//if the first array can be nested
+//inside the second and false otherwise.
 
 function canNested(arr1, arr2) {
   let a1L = arr1[0];
@@ -29,5 +31,4 @@ function canNested(arr1, arr2) {
   }
 }
 
-console.log(canNested([1,2,3,4], [0,6]));//true
-
+console.log(canNested([1, 2, 3, 4], [0, 6])); //true
