@@ -15,3 +15,9 @@ function oneList(arr1, arr2) {
 
 console.log(oneList([1, 2, 3], [8, 7, 6]));//[ 1, 2, 3, 8, 7, 6 ]
 
+//method2
+function oneList(arr1, arr2) {
+  let x =arr1.concat(arr2);
+  return x;
+}
+console.log(oneList([1, 2, 3], [8, 7, 6]));//[ 1, 2, 3, 8, 7, 6 ]
