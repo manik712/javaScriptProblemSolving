@@ -32,4 +32,4 @@ function seriesResistance(arr) {
   return result;
 }
 
-seriesResistance([1]);
+seriesResistance([1]);//"1 ohm"
