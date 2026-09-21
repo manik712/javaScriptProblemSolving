@@ -8,7 +8,10 @@
 function stuttering(str) {
   //split the string
   let x = str.split("");
-  
+  //join the two element of an array
+  let y = `${x[0]}${x[1]}`;
+  let z = `"${y}...${y}...${str}!"`;
+  console.log(z);
 }
 //call function
 stuttering("astounding");
