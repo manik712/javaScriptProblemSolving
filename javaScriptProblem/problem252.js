@@ -1,5 +1,5 @@
 //Create a function that will take a HEX
-// number and returns the binary equivalent (as a string).
+//number and returns the binary equivalent (as a string).
 
 // Examples
 // toBinary(0xFF) ➞ "11111111"
