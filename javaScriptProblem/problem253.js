@@ -9,15 +9,20 @@
 // ]
 
 function smallToLarge(obj) {
-  let price1 =obj[0].price;
-  let price2 =obj[1].price;
+  let price1 = obj[0].price;
+  let price2 = obj[1].price;
 
-
-
+  //condition
+  if (price2 < price1) {
+    return [obj[1], obj[0]];
+  } else {
+    return [obj[0], obj[1]];
+  }
 }
 //the object
 drinks = [
-  { name: "lemonade", price: 50 },
-  { name: "lime", price: 10 },
+  { name: "lemonade", price: 10 },
+  { name: "lime", price: 50 },
 ];
 
+console.log(smallToLarge(drinks));
