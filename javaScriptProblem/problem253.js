@@ -9,8 +9,8 @@
 // ]
 
 function smallToLarge(obj) {
-  let price1 = obj[0].price;
-  let price2 = obj[1].price;
+  let price1 = obj[0].price;//10
+  let price2 = obj[1].price;//50
 
   //condition
   if (price2 < price1) {
