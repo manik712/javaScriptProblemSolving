@@ -16,4 +16,4 @@ function addArray(arr1, arr2) {
   let arr3 = [arr1[0], ...arr2, arr1[1]];
   console.log(arr3);
 }
-addArray([1, 2], [5, 8, 90]);
+addArray([1, 2], [5, 8, 90]);//[ 1, 5, 8, 90, 2 ]
