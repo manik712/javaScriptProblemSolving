@@ -42,12 +42,16 @@
 // console.log(compareArrays(array1, array2)); //false
 // console.log(compareArrays(array1, array3)); //false
 // console.log(compareArrays(array2, array4)); //true
-function compareArrays(array1,array2){
-  //if condition
-if(array1.length!==array2.length){
-  return "please input same length of array"
-}else{
-
+function compareArrays(array1, array2) {
+  //if else condition
+  if (array1.length !== array2.length) {
+    return "please input same length of array";
+  } else {
+    //for loop
+    for (let i = 0; i <= array1.length - 1; i++) {
+      if(array1[i]!==array2[i] && array1[i]>array2[i]){
+       return true
+      }
+    }
+  }
 }
-}
-
