@@ -12,17 +12,32 @@
 // Your output must be case-sensitive (see second example).
 
 function charCount(x, str) {
+  //let count the letter
   let count = 0;
   //let match the letter ...
   const regex = new RegExp(x, "g");
   //  console.log(regex)
   let y = str.match(regex);
   //print the array
-  console.log(y);
+  // console.log(y);
+  //for loop ...
   for (let i = 0; i <= y.length - 1; i++) {
     count++;
   }
   return count;
+}
+
+console.log(charCount("c", "Chamber of secrets"));
+
+
+//alternative
+
+function charCount(x, str) {
+  //let match the letter ...
+  const regex = new RegExp(x, "g");
+  //  console.log(regex)
+  let y = str.match(regex);
+  return y.length;
 }
 
 console.log(charCount("c", "Chamber of secrets"));
