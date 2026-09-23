@@ -1,8 +1,8 @@
-//Create a function that takes an array of non-negative 
+//Create a function that takes an array of non-negative
 // integers and strings and return a new array without the strings.
 
 // Examples
-// filterArray([1, 2, "a", "b"]) ➞ [1, 2] 
+// filterArray([1, 2, "a", "b"]) ➞ [1, 2]
 // filterArray([1, "a", "b", 0, 15]) ➞ [1, 0, 15]
 //  filterArray([1, 2, "aasf", "1", "123", 123]) ➞ [1, 2, 123]
 
@@ -12,12 +12,15 @@
 // Numbers in the array should not repeat.
 // The original order must be maintained.
 
-function numberFromArray(arr){
-  let array1=[];
+function numberFromArray(arr) {
+  let array1 = [];
   //for loop..
-  for(let i=0;i<=arr.length-1;i++)
-    
-    
-  
+  for (let i = 0; i <= arr.length - 1; i++) {
+    //if condition
+    if (typeof arr[i] === "number") array1.push(arr[i]);
+  }
+  //return the array
+  return array1;
 }
-console.log(numberFromArray([1,2,3,4,"b","book"]))
+//print the result..
+console.log(numberFromArray([1, 2, 3, 4, "b", "book"]));
