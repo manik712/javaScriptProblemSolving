@@ -9,6 +9,7 @@
 // All test cases contain valid strings.
 //  Don't worry about spaces, special characters
 //  or numbers. They're all considered valid characters.
+
 function doubleChar(str) {
   let x = str
     .split("") //Convert a string into an array
